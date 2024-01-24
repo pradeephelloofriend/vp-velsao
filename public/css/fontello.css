@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('./fonts/fontello.eot?43983834');
+  src: url('./fonts/fontello.eot?43983834#iefix') format('embedded-opentype'),
+       url('./fonts/fontello.woff2?43983834') format('woff2'),
+       url('./fonts/fontello.woff?43983834') format('woff'),
+       url('./fonts/fontello.ttf?43983834') format('truetype'),
+       url('./fonts/fontello.svg?43983834#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?43983834#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-water-1.52-01:before { content: '\e803'; } /* '' */
+.icon-save-deposit-[converted]:before { content: '\e804'; } /* '' */
+.icon-car-loan-[converted]:before { content: '\e805'; } /* '' */
+.icon-clear-[converted]-01:before { content: '\e806'; } /* '' */
+.icon-community-[converted]-01:before { content: '\e807'; } /* '' */
+.icon-easy-acc-[converted]-01:before { content: '\e808'; } /* '' */
+.icon-fdr-[converted]-01:before { content: '\e809'; } /* '' */
+.icon-fix-deposit-[converted]-01:before { content: '\e80a'; } /* '' */
+.icon-gold-01-[converted]-01:before { content: '\e80b'; } /* '' */
+.icon-home-loan-[converted]-01:before { content: '\e80d'; } /* '' */
+.icon-insu-[converted]:before { content: '\e80e'; } /* '' */
+.icon-light-[converted]:before { content: '\e80f'; } /* '' */
+.icon-money-transfer-[converted]-01:before { content: '\e810'; } /* '' */
+.icon-old-[converted]-01:before { content: '\e811'; } /* '' */
+.icon-personal-loan-[converted]-1:before { content: '\e812'; } /* '' */
+.icon-pigmy-[converted]-01:before { content: '\e813'; } /* '' */
+.icon-satis-[converted]-01:before { content: '\e814'; } /* '' */
+.icon-personal-loan-[converted]-01:before { content: '\e815'; } /* '' */
+.icon-save-deposit-[converted]-01:before { content: '\e816'; } /* '' */

@@ -1,0 +1,528 @@
+/**Responsive*/
+.navbar-toggler {
+    padding: 0.25rem 0.4rem;
+    font-size: 20px;
+}
+.navbar-toggler-icon{
+    filter: invert(1);
+    width: 1.2em;
+height: 1.2em;
+}
+@media only screen and (min-width: 992px){
+    .modal-view .modal-lg{
+        max-width: 1009px !important;
+    }
+}
+@media only screen and (max-width: 10560px) {
+    .logo-mob {
+        display: none;
+    }
+}
+@media only screen and (max-width: 2558px) and (max-width: 1441px)  {
+    .logo-mob {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .logo-mob {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1099px) and (max-width: 1699px) {
+    .about-us-tab .ant-tabs-nav {
+        width: 25% !important;
+    }
+    .about-us-tab .ant-tabs-nav .ant-tabs-tab {
+        white-space: break-spaces !important;
+    }
+    .logo-mob {
+        display: none;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .swiper_content {
+        position: absolute;
+        top: 47px;
+        left: 100px
+    }
+    .about-us-tab .ant-tabs-nav {
+        width: 25% !important;
+    }
+    .about-us-tab .ant-tabs-nav .ant-tabs-tab {
+        white-space: break-spaces !important;
+    }
+    .ph-ul li p {
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 0;
+        line-height: 1.2;
+    }
+    .pf-ul li p {
+        font-size: 16px !important;
+        font-weight: 500;
+        margin-bottom: 0;
+        line-height: 1.2;
+    }
+    .pf-ul li {
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+    }
+    .logo-mob {
+        display: none;
+    }
+    .header-content-right a, .header-content-left a {
+        margin-right: 18px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .swiper_content {
+       left: 85px;
+       top: 61px;
+    }
+    .cm-logo {
+        max-width: 550px;
+        float: right;
+        position: relative;
+        top: 14px;
+        right: 8px;
+    }
+
+    .cm-text .ant-typography {
+        font-weight: 500;
+        margin-bottom: 0%;
+    }
+    .cm-img {
+        width: 80px;
+    }
+    .m-logo span {
+        display: -webkit-flex;
+        display: -moz-box;
+        display: flex;
+        font-size: 25px;
+    }
+    .logo-mob {
+        display: none;
+    }
+    .header-content-right a, .header-content-left a {
+        margin-right: 52px;
+    }
+    .hallhdr h2 {
+        font-size: 28px;
+    }
+    .abt-us-soc h6 {
+        font-size: 14px;
+        padding: 10px 20px 0px 0px;
+    }
+    .card-mp {
+        width: 60% !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .profile-section .pf-ul{
+        display: block;
+    }
+    .profile-section .ph-ul{
+        display: block;
+    }
+    .profile-section .pf-ul li {
+        margin-bottom: 15px;
+    }
+    .profile-section .ph-ul li {
+        margin-bottom: 30px;
+    }
+    .ol-section .ol-card {
+        margin-bottom: 20px;
+    }
+    .m-logo {
+        max-width: 196px;
+    }
+    .m-logo span {
+        font-size: 20px;
+    }
+    .m-logo span:nth-child(2) {
+       font-size: 11px;
+        
+    }
+    .cm-logo {
+        max-width: 173px;
+        float: right;
+        position: relative;
+        top: 16px;
+        right: 8px;
+    }
+    .cm-text span {
+        font-size: 10px;
+        color: #000000bd;
+    }
+    .cm-text h5.ant-typography{
+  
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 15.4px;
+    }
+    .navbar-light .navbar-toggler {
+        color: rgb(255 255 255 / 55%);
+    border-color: rgb(225 225 225 / 51%);
+    }
+    .navbar {
+        padding: 8px 0;
+    }
+    .navbar-toggler {
+        padding: 0.25rem 0.4rem;
+        font-size: 20px;
+    }
+    .navbar-toggler-icon{
+        filter: invert(1);
+        width: 1.2em;
+    height: 1.2em;
+    }
+    .top-header-area {
+        
+        text-align: center;
+    }
+    .header-content-right {
+        float: none; 
+        display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+    }
+
+    .swiper_content {
+        left: 25px;
+        top: 16px;
+    }
+    .swiper_content .lg-heading{
+        font-size: 20px;
+    }
+    .swiper_content .trending{
+        font-size: 15px;
+    }
+    .swiper_content .home-slider-title{
+        margin-bottom: 0.7rem!important;
+    }
+    .about_section{
+        margin-top: 150px;
+        padding-top: 20px;
+    
+    }
+    .slider-bottom-bar .kam-topbar-left .sm-btm-right{
+        /* background-color: #172c3d; */
+        padding: 20px 16px 10px 30px;
+        margin-left: -38px;
+        margin-top: 0;
+        margin-bottom: 0 !important;
+        justify-content: flex-start !important;
+    }
+    .slider-bottom-bar .kam-topbar-left .sm-btm-right>li{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .marquee-box {
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+    .desk-image {
+        right: 117px;
+        top: -110px;
+    }
+    .desk-image>div {
+        
+        height: 120px;
+        width: 120px;
+        
+    }
+    .news-status {
+        
+        top: -95px;
+        
+    }
+    .pop-section {
+        background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1665934298/vp/nagoa/pop1-min_oeutdx.jpg');
+
+    }
+    
+    .pop-content {
+        position: relative;
+        top: 12px;
+    }
+    .pop-content .lead{
+        line-height: 1.3;
+        font-size: 16px;
+    }
+    .pop-content .counter {
+        margin-bottom: 0;
+    }
+    .image-container{
+        display: none;
+    }
+    .facility-tab .faci-card{
+        margin-bottom: 10px;
+    }
+    .ant-tabs-tab{
+        padding: 6px 27px 6px 6px !important;
+    }
+    .ant-tabs-tab + .ant-tabs-tab {
+        margin: 0 0px 0px 0px;
+    }
+    .scheme-area .scheme-content>.btn-arrow .anticon {
+        font-size: 18px;
+    }
+    .scheme-area .scheme-content>.btn-arrow .ant-btn-text {
+        
+        height: 32px;
+        
+    }
+    .scheme-area .scheme-content>.btn-arrow .btn-prev{
+        padding: 4px 9px;
+    }
+    /**Certificate page*/
+    .image-container1{
+        display: none;
+    }
+    .page-head{
+        background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1665985128/vp/nagoa/bd-min_koxbil.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .about-us-tab .sub-tab .ant-tabs-tab-btn:after {
+        content: "\f107";
+        font-family: FontAwesome;
+        font-weight: normal;
+        padding-right: 10px;
+        font-weight: normal;
+        right: 0px;
+        position: absolute;
+    }
+
+    
+    .scrollable-div {
+        overflow: auto;
+        max-height: 300px; /* Set a maximum height to limit the scrolling area */
+        max-width: 800px;
+      }
+
+    .h-25 {
+        height: 11.5rem !important;
+    }
+    .logo-mob {
+        display: none;
+    }
+    .hallhdr h2 {
+        font-size: 20px;
+    }
+    .hallhdr h6 {
+        font-size: 14px;
+        padding-left: 16px;
+    }
+    .abt-us-soc h6 {
+        font-size: 14px;
+        padding: 10px 20px 0px 0px;
+    }
+    .adress-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adress-block span {
+        margin-bottom: 8px;
+      }
+
+    .announce-block .team-level {
+        position: absolute;
+        top: 66%;
+        left: 14%;
+    }
+    .card-mp {
+        width: 60% !important;
+    }
+}
+@media only screen and (max-width: 426px) {
+    .card-mp {
+        width: 86% !important;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .news-bgm-anim-duplicate3::before {
+        position: absolute;
+        content: "";
+        left: -21%;
+        top: 5%;
+    }
+    .card-mp {
+        width: 86% !important;
+    }
+    .swiper_content {
+        left: 25px;
+        top: 16px;
+    }
+    .slide-btn .anticon {
+        font-size: 40px;
+    }
+    .date-panel {
+        display: block;
+    }
+
+    .m-logo {
+        max-width: 144px;
+    }
+
+    .m-logo span:nth-child(2) {
+        font-size: 7px;
+    }
+
+    .cm-logo {
+        max-width: 156px;
+        float: right;
+        position: relative;
+        top: 0px;
+        right: 1px;
+    }
+
+    .cm-text .ant-typography {
+        font-weight: 500;
+        font-size: 51%;
+        margin-bottom: 0%;
+    }
+
+    .m-logo span {
+        font-size: 12px;
+    }
+
+    .pf-ul li p {
+        font-size: 21px;
+    }
+
+    .centered-div {
+        display: none;
+        justify-content: center; /* Horizontally center */
+        align-items: center; /* Vertically center */
+        margin: 2% 0% 0% 0%;
+      }
+
+    .cm-logo {
+        max-width: 300px;
+        float: left;
+        position: relative;
+        top: 8px;
+        right: 1px;
+        margin-top: 20px;
+    }
+
+    .logo-mob {
+        padding-left: 13px;
+        float: right;
+        display: block !important;
+    }
+    .logo-p-mob, .ext-logo {
+        display: none !important;
+    }
+    .header-content-right {
+        float: none; 
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 6px;
+    }
+    .m-logo img {
+        width: 75px;
+        height: 75px;
+        float: left;
+        margin-right: 0px;
+    }
+    .hallbtn {
+        margin-top: 60px;
+    }
+
+    .hallhdr h1 {
+        font-size: 22px;
+    }
+
+    .abt-us-soc h6 {
+        font-size: 12px;
+        padding: 10px 20px 0px 14px;
+    }
+
+    .abt-us-soc a i {
+        font-size: 26px;
+    }
+
+    .abt-us-soc {
+        padding: 4% 0% 4% 0%;
+    }
+    .cm-img {
+        width: 80px;
+    }
+    .cm-text {
+        line-height: 0.8;
+    }
+    .scheme-area .scheme-content>.btn-arrow {
+        margin-top: 20px;
+    }
+    .poster-section {
+        background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1693206802/vp/Chicalim/merimaati_mera_esh-min_m7zsdc.jpg');
+    }
+    .announce-block .team-level {
+        position: absolute;
+        top: 65%;
+        left: 12%;
+    }
+    .img-announce {
+        height: 266px;
+        /* background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1693483123/vp/Chicalim/c_chialim_p_abrieo.jpg'); */
+        /* background-size: 100%; */
+    }
+    .vilact-sp {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .panel {
+        width: calc((90vw - 60px)/3) !important;
+        height: calc((90vw - 60px)/3)!important;
+    }
+    .vil-cnt p, h4 {
+        width: 80%;
+        margin: 0px auto;
+    }
+    .vil-cnt {
+        box-shadow: 0px 0px 0px #0000006e;
+        border: 0px solid #f0f0f0;
+    }
+    .fac-effect .ant-card:nth-child(2)  {
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+      
+  }
+  @media only screen and (max-width: 323px) {
+    .card-mp {
+        position: relative;
+        right: 50px;
+        width: 106% !important;
+    }
+  }
+
+  /* @media only screen and (max-width: 376px) {
+    .img-announce {
+        background-image: url(https://res.cloudinary.com/depg2aab2/image/upload/v1693483123/vp/Chicalim/c_chialim_p_abrieo.jpg);
+        background-size: 100%;
+        height: 710px;
+    }
+  }
+  @media only screen and (max-width: 321px) {
+    .img-announce {
+        background-image: url(https://res.cloudinary.com/depg2aab2/image/upload/v1693483123/vp/Chicalim/c_chialim_p_abrieo.jpg);
+        background-size: 100%;
+        height: 600px;
+    }
+  }
+  @media only screen and (max-width: 391px) {
+    .img-announce {
+        background-image: url(https://res.cloudinary.com/depg2aab2/image/upload/v1693483123/vp/Chicalim/c_chialim_p_abrieo.jpg);
+        background-size: 100%;
+        max-height: 742px;
+    }
+    } */
+/**end-responsive*/
