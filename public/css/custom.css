@@ -1092,9 +1092,16 @@ padding-left: 0rem;
     color: white ;
 }
 .bg-c-blue{
-    background-color:#4625a4;
+    background-color:#3970ff;
     padding: 14px !important;
     /* box-shadow: 0px 7px 14px 3px #10084f; */
+}
+.text-black {
+  color:#000000;
+}
+.bg-c-blue2{
+  /* background-color:#ff3a50; */
+  /* box-shadow: 0px 7px 14px 3px #10084f; */
 }
 .link-c-blue{
   color: #7f7544;
@@ -1768,7 +1775,7 @@ padding-left: 0rem;
 .top-header-area{
   line-height: 2.0;
   /* background-color: #88f5ca; */
-  background-color: #847eebab;
+  background-color: #f0dbc1;
 }
 .header-content-right a,
 .header-content-left a{
@@ -6352,7 +6359,7 @@ border: 0px;
 }
 
 .news-links {
-  background-image: linear-gradient(to right, #5b39bc, #5c39bcd2, #5b39bc);
+  background-image: linear-gradient(to right, #00a1ff, #0082ce, #00a1ff);
   color: white;
 }
 
@@ -6376,7 +6383,7 @@ border: 0px;
 
 .news-ps2 {
   border-radius: 4px;
-  background-color: #f1e9dc;
+  background-color: #faeb00;
   position: relative;
   top: -30px;
 }
@@ -6897,6 +6904,15 @@ padding-bottom: 24px;
 }
 
 .m-logo a .vp-title{
+  font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 400%;
   text-transform: uppercase;
   color: #4625a4;
 }
@@ -7663,12 +7679,15 @@ content: "";
   padding-bottom: 11px;
 }
 .abt_sec .abt-card {
-  border: 1px solid #ececec !important;
-  margin-top: 35px;
+  /* border: 1px solid #ececec !important; */
+  /* margin-top: 35px; */
+  border: 0px solid #ffffff00 !important;
+  border-radius: 5px !important;
+  box-shadow: 0px 10px 40px #5e5d5cba;
 }
 .news-block {
   padding: 6px 12px;
-  background-color: #488dff61;
+  background-color: #95e4ff;
   border-radius: 4px;
   margin-bottom: 10px;
 }
@@ -8136,4 +8155,44 @@ marquee {
 
 .bnk-box span {
   margin-bottom: 20px;
+}
+
+/* .card-infra-txt {
+  position: relative;
+  z-index: 4;
+  top: -150px;
+  background-color: #3970ff;
+  margin: 25px 15px;
+  border-radius: 4px;
+  padding: 20px 20px;
+  text-align: center;
+} */
+
+.card-infra {
+  background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1694498381/vp/nagargoa/newsp1cmp-min_onxnol.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-infra-txt {
+  overflow: auto;
+  width: 16rem;
+  background-color: #f0ffffbf;
+  margin: 24px 0px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.70);
+}
+
+.rec-card .rec-dev-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px; 
+  color: white;
+  background-color: rgb(0 0 0 / 70%); 
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.rec-card .carousel-indicators {
+  display: none !important;
 }

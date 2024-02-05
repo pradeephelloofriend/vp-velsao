@@ -1,5 +1,6 @@
 import React from 'react'
 import {Card, Tabs, List, Spin} from 'antd'
+import Carousel from 'react-bootstrap/Carousel';
 const { TabPane } = Tabs;
 import {connect} from 'react-redux'
 import { setTabKey } from '../../redux/menu/menuAction'
@@ -11,6 +12,9 @@ import RecentDevelopmentComponent from './RecentDevelopmentComponent'
 import {getNewsLetterDataHome } from '../../lib/api'
 import Marquee from "react-fast-marquee";
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
+import { getSliderEventData } from '../../lib/api';
+import { getRecentDevData } from '../../lib/api';
+import PopulationCountSectionComponent from './PopulationCountSectionComponent';
 
 const onChange = (key) => {
   // console.log(key);
@@ -22,6 +26,7 @@ const NewsSectionComponent = ({setTabKey,devData}) => {
   const [containerDisplay, setContainerDisplay] = React.useState('none');
 
   const [isLoaded, setIsLoaded] = React.useState(false);
+  const [rdData,setRddata]=React.useState(null)
 
   const handleLoad = () => {
     setIsLoaded(true);
@@ -45,16 +50,21 @@ const NewsSectionComponent = ({setTabKey,devData}) => {
 }
   
   const [newsData,setNewsdata]=React.useState(null)
+  const [eventMnyData, setEventMnyData]=React.useState(null)
   React.useEffect(()=>{
       //setLoading(true)
       let isApiSubscribed = true;
       async function fetchData() {
              
           const nwData = await getNewsLetterDataHome()
+          const emData = await getSliderEventData()
+          const rData = await getRecentDevData()
           // 👇️ only update state if component is mounted
           if (isApiSubscribed) {
             // console.log('nwData new',nwData)
             setNewsdata(nwData)
+            setEventMnyData(emData)
+            setRddata(rData)
           }
         }
       
@@ -66,6 +76,7 @@ const NewsSectionComponent = ({setTabKey,devData}) => {
   },[])
   // console.log('newsData',newsData)
   // console.log('newsData.length : ', newsData.length)
+  console.log('rdData',rdData)
   return (
       <>
           {/* <section className="wrapper news-bgm-anim news-bgm-anim-duplicate1"> */}
@@ -95,70 +106,9 @@ const NewsSectionComponent = ({setTabKey,devData}) => {
                       </div>
 
 
-            <div className='col-md-6'>
-              <Card className='rec-card mb-5' style={{ backgroundColor: "#142f4700", border: '0px' }}>
-                <div>
-                  <h2>Recent development works</h2>
-                </div>
-                <div class="masonry-container">
-                  <div class="panel" >
-                    <div class="panel-wrapper">
-                      <img class="panel-img" onMouseOver={(e) => ViewDispImg(e.target)} src="https://res.cloudinary.com/depg2aab2/image/upload/v1696835540/vp/pissurlem/MRF_shed1-min_ef1vk8.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div class="panel" >
-                    <div class="panel-wrapper">
-                      <img class="panel-img" onMouseOver={(e) => ViewDispImg(e.target)} src="https://res.cloudinary.com/depg2aab2/image/upload/v1696835529/vp/pissurlem/VP_Pissurlem_Ghar1-min_pjhidv.jpg" alt="" />
-                    </div>
-                  </div>
-                  {/* <div class="panel" >
-                    <div class="panel-wrapper">
-                      <img class="panel-img" onMouseOver={(e) => ViewDispImg(e.target)} src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/waves.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div class="panel">
-                    <div class="panel-wrapper">
-                      <img class="panel-img" onMouseOver={(e) => ViewDispImg(e.target)} src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/docks.jpg" alt="" />
-                    </div></div>
-                  <div class="panel">
-                    <div class="panel-wrapper">
-                      <img class="panel-img" onMouseOver={(e) => ViewDispImg(e.target)} src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/forest.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div class="panel">
-                    <div class="panel-wrapper">
-                      <img class="panel-img" onMouseOver={(e) => ViewDispImg(e.target)} src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/docks.jpg" alt="" />
-                    </div></div>
-                  <div class="panel">
-                    <div class="panel-wrapper">
-                      <img class="panel-img" onMouseOver={(e) => ViewDispImg(e.target)} src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/forest.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div class="panel">
-                    <div class="panel-wrapper">
-                      <img class="panel-img" onMouseOver={(e) => ViewDispImg(e.target)} src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/waves.jpg" alt="" />
-                    </div>
-                  </div> */}
-                </div>
-              </Card>
-            </div>
+            
 
-            <div className='col-md-6' style={{ marginTop: '24px' }}>
-              <Card className='rec-card mb-5' style={{ backgroundColor: "#d4d4d4", margin: '10% 0px' }}>
-                <img class="rec-img-sz"
-
-                  src={expandedImgSrc}
-                  // src={"https://res.cloudinary.com/depg2aab2/image/upload/v1694587483/vp/nagargoa/vpnimg-min_smnzhc.jpg"} 
-                  // style={{border : '15px solid #d4d4d4'}}
-                  alt="" />
-              </Card>
-              {/* <div class="masonry-container-lg">
-                          <img class="" 
-                            src={expandedImgSrc} 
-                            style={{border : '15px solid #d4d4d4'}}
-                            width={500} and height={400} alt="" />
-                        </div> */}
-            </div>
+            
 
 
 
@@ -228,14 +178,98 @@ const NewsSectionComponent = ({setTabKey,devData}) => {
 
                       <div className="col-md-6 col-xl-6 news-rw">
                         <div className='row'>
+
+                        <div className="col-md-7 col-xl-7">
+                          <Card className='abt-card bg-c-blue2 mb-5' >
+                            <div className='add_mem_block'>
+
+                              <Carousel fade>
+                                {eventMnyData !== null ? eventMnyData.map((i, index) =>
+                                  <Carousel.Item key={index}>
+                                    <img className="d-block w-100 h-100"
+                                      alt="s1"
+
+                                      src={i.image.sourceUrl}
+                                    />
+                                    {i.link !== null ?
+                                      <><a href={i.link} target='_blank'><h4 className='text-black py-4 px-sm-2'>{i.title}</h4></a></>
+                                      :
+                                      (i.title !== null ? <><h4 className='text-black py-4 px-sm-2'>{i.title}</h4></> : <></>)
+                                    }
+                                  </Carousel.Item>
+                                ) : <></>}
+                              </Carousel>
+                            </div>
+                          </Card>
+                        </div>
+                          
+
                           <div className='col-md-5 col-sm-12'>
+                            <div>
+                              <div className='top_head_bar' style={{marginBottom : '45px'}}>
+                                <div className='th_title'>
+                                  <h4>Socials</h4>
+                                </div>
+                              </div>
+                              {!isLoaded && 
+                                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '20vh' }}><Spin/></div>}
+                              <TwitterTimelineEmbed
+                                sourceType="profile"
+                                screenName="mygovindia"
+                                options={{ height: 300, width: "auto"}}
+                                onLoad={handleLoad}
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <PopulationCountSectionComponent/>
+
+
+                      <div className='row' style={{ marginTop: '50px' }}>
+                      <div className='col-md-5' >
+              <div>
+                <h2>Recent development works</h2>
+              </div>
+              <Card className='rec-card mb-5' style={{ backgroundColor: "#d4d4d4", margin: '10% 0px' }}>
+              <Carousel fade>
+                    {rdData !== null ? rdData.map((i, index) =>
+                      <Carousel.Item key={index}>
+                        <div style={{ position: 'relative' }}>
+                          <img className="d-block w-100" alt="s1" src={i.developments.image.sourceUrl} />
+                          <div className='rec-dev-text'>
+                            {i.developments.title !== null ?
+                              <span className='text-white'>{i.developments.title}</span>
+                              :
+                              <></>
+                            }
+                          </div>
+                        </div>
+
+                      </Carousel.Item>
+                    ) : <></>}
+                  </Carousel>
+              </Card>
+              {/* <div class="masonry-container-lg">
+                          <img class="" 
+                            src={expandedImgSrc} 
+                            style={{border : '15px solid #d4d4d4'}}
+                            width={500} and height={400} alt="" />
+                        </div> */}
+            </div>
+
+            
+
+            <div className='col-md-3 col-sm-12'>
                             <div className=''>
                               <div className='top_head_bar'>
                                 <div className='th_title'>
                                   <h4>Activities</h4>
                                 </div>
                               </div>
-                              <Card className='mb-5' style={{ backgroundColor: '#ffffff00' }}>
+                              <Card className='' style={{ backgroundColor: '#ffffff00' }}>
                                 <Card
                                   // title={d.name} 
                                   className='act-card link-ct-blue mb-0 text-center '
@@ -271,27 +305,27 @@ const NewsSectionComponent = ({setTabKey,devData}) => {
                               </Card>
                             </div>
                           </div>
-
-                          <div className='col-md-7 col-sm-12'>
-                            <div>
-                              <div className='top_head_bar' style={{marginBottom : '45px'}}>
-                                <div className='th_title'>
-                                  <h4>Socials</h4>
-                                </div>
-                              </div>
-                              {!isLoaded && 
-                                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '20vh' }}><Spin/></div>}
-                              <TwitterTimelineEmbed
-                                sourceType="profile"
-                                screenName="mygovindia"
-                                options={{ height: 300, width: "auto"}}
-                                onLoad={handleLoad}
-                              />
-                            </div>
+                          
+                          <div className='col-md-4 col-sm-12'>
+                            <Card
+                              // title={d.name} 
+                              className='act-card link-ct-blue mb-0 '
+                              hoverable
+                            >
+                              <h6 className='mb-5 text-center text-decoration-underline'> Helpline Contact </h6>
+                              <ul>
+                                <li><p className=''>Police – <b>100</b></p></li>
+                                <li><p className=''>Fire – <b>101</b></p></li>
+                                <li><p className=''>Ambulance –  <b>102</b></p></li>
+                                <li><p className=''>Women Helpline - <b>1091</b></p></li>
+                                <li><p className=''>Child Helpline - <b>1098</b></p></li>
+                              </ul>
+                              
+                            </Card>
                           </div>
-                        </div>
 
-                      </div>
+                          </div>
+
                   </div>
               </div>
           </section>

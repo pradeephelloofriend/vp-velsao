@@ -9,7 +9,7 @@ const LogoNavbarComponent = () => {
   return (
     <>
     <section className="wrapper header-wrapper">
-        <div className="container-fluid">
+        <div className="container-fluid py-2">
             <div className='row'>
                 <div className='col-md-6 col-sm-6'>
                     <div className="m-logo">

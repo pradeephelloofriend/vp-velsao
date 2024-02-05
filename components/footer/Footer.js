@@ -72,24 +72,7 @@ import {selectFootData} from '../../redux/footer/footSelector';
                         </div>
 
                         <div className='col-md-4 col-sm-12'>
-                        <div className="c-footer-pd text-center ft-addrs wrapper-ft">
-
-                            <div>
-                                <img src='https://res.cloudinary.com/depg2aab2/image/upload/v1697617150/vp/pissurlem/qr_pissurlem-min_pf6gmu.jpg'
-                                    height={200} width={200} alt="g20"></img>
-                                <p>SCAN & PAY</p>
-                                <span className='mr-5'>UPI ID  : <span className='bnk-bd'>vppissurlem@sbi</span></span>
-                            </div>
-                            <div className='bnk-box'>
-                                <p className="mb-2 mb-lg-0 adress-block">
-                                    <span className=''>Name of Account Holder : <span className='bnk-bd'>Village Panchayat Pissurlem</span></span>
-                                    <span className=''>Name of Bank : <span className='bnk-bd'>State Bank Of India</span></span>
-                                    <span className=''>Branch/Code : <span className='bnk-bd'>Honda-Sattari(Goa) / 6191</span></span>
-                                    <span className=''>Account Number : <span className='bnk-bd'>11327816620</span></span>
-                                    <span className=''>Account Type : <span className='bnk-bd'>Regular Savings Bank Account</span></span>
-                                    <span className=''>IFSC Code  : <span className='bnk-bd'>SBIN0006191</span></span>
-                                </p>
-                            </div>
+                        <div className="c-footer-pd text-center ft-addrs wrapper-ft" style={{ display : 'none'}}>
                                      
                             </div>
                         </div>

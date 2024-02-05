@@ -25,6 +25,7 @@ import PosterComponent from '../components/home/PosterComponent';
 import HallBookButtonComponent from '../components/home/HallBookButtonComponent';
 import AnnounceModal from '../components/modal/AnnounceModal';
 import StepsComponent from '../components/StepsComponent';
+import PopulationCountSectionComponent from '../components/home/PopulationCountSectionComponent';
 
 //get initial ServerSideProps
 
@@ -40,6 +41,7 @@ const index = ({isLoading}) => {
             <NewsSectionComponent />
             {/* <HallBookButtonComponent/> */}
             {/* <PosterComponent /> */}
+            
             <ProfileComponent/>
             <OtherLinksComponent/> 
             <PopulationSectionComponent/>
