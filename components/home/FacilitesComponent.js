@@ -86,7 +86,7 @@ const FacilitesComponent = () => {
                             <TabPane tab={i.title} key={idx}>
                                 <div className='row'>
                                     {i.infrastructure.infraDetails!==null ? i.infrastructure.infraDetails.map((d,ix)=>
-                                        <div key={ix} className='col-lg-6 col-md-6 col-sm-12 fac-effect ' style={{padding : '16px 16px'}}>
+                                        <div key={ix} className='col-lg-6 col-md-6 col-sm-12 fac-effect ' style={{padding : '16px'}}>
                                           <div className='row'>
 
                                           <Card style={{ width: '36rem', height: '14rem', backgroundImage: `url(${d.image.sourceUrl})`, backgroundSize: 'cover' }} className='card-infra'>
@@ -95,31 +95,7 @@ const FacilitesComponent = () => {
                                               <Card.Text>{d.desc}</Card.Text>
                                             </Card.Body>
                                           </Card>
-                                          {/* <Card 
-                                                // title={d.name} 
-                                                className='col-md-6 faci-card'
-                                                hoverable
-                                                style={{ width: imgWidth }}
-                                                cover={
-                                                <Image alt="facilities"
-                                                className='ag-courses-item_img'
-                                                placeholder="blur"
-                                                blurDataURL={load}
-                                                priority={true}
-                                                 src={d.image.sourceUrl} 
-                                                 height={500} 
-                                                 width={800} 
-                                                 />}
-                                            >
-                                            <Card.Meta className='card-infra-txt'
-                                              title={<h3>Your Header</h3>}
-                                              description={<p>Your Paragraph</p>}
-                                            />
-                                          </Card> */}
-                                          {/* <Card className='col-md-6 vil-cnt'>
-                                            <h4 className='link-c-blue mb-0 text-center'> {d.name}  </h4>
-                                            <p className='ag-courses-item_title mb-0'>{d.desc}</p>
-                                          </Card> */}
+                                          
                                           </div>
 
 

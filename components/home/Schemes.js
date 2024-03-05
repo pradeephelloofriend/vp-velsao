@@ -150,8 +150,8 @@ const Schemes=({setIsloading})=> {
                               <div className="col-lg-4">
                                 <div className="">
                                   <div className=" ">
-                                    <h4 className="display-6 mb-0 link-disp-blue">GOA Government Schemes</h4>
-                                    <h6 className="link-disp-blue">KNOW YOUR SCHEME</h6>
+                                    <h4 className="display-6 mb-0 green-grey">GOA Government Schemes</h4>
+                                    <h6 className="green-grey">KNOW YOUR SCHEME</h6>
                                     <p className="" style={{marginBottom : '8px'}}>A Goa Goverment initiative 
                                       to guides it's citizen in identifying all related schemes. All under one platform.</p>
                                     <a href='https://goaonline.gov.in/' target='_blank' style={{color: 'red'}}>www.goaonline.gov.in</a>

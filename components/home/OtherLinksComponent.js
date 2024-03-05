@@ -3,7 +3,6 @@ import {Card} from 'antd'
 const OtherLinksComponent = () => {
   return (
     <section className="wrapper bg-light ol-section " >
-        <div className="container py-10 py-md-10 pb-md-10">
             <div className='row card-deck container-othr '>
                 <div className='col-md-3'>
                     <Card className='ol-card ol-hos card hover-othr'
@@ -49,7 +48,7 @@ const OtherLinksComponent = () => {
                                 <br/>
                             </ul>
                         </div>
-                    </Card>
+                    </Card>   
                 </div>
                 <div className='col-md-3'>
                     <Card className='ol-card ol-gov card hover-othr'
@@ -73,7 +72,6 @@ const OtherLinksComponent = () => {
                   <div class="wave"></div>
                   <div class="wave"></div>
               </div> */}
-        </div>
     </section>
   )
 }
