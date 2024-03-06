@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import {useRouter} from 'next/router'
-import pmap from '../../public/img/pissurlempanchayat.jpg'
+import pmap from '../../public/img/velsao-pale.jpg'
 import { Button } from 'antd'
 
 const RegionComponent = () => {
@@ -12,7 +12,7 @@ const RegionComponent = () => {
       <div className='row'>
         <div className='col-lg-12 col-md-12 col-sm-12'>
           <div className='' style={{paddingBottom: '6px'}}>
-            <a href='https://tcp.goa.gov.in/wp-content/uploads/2019/02/land-use-plan/SattariTaluka/pissurlempanchayat.jpg' target='_blank'> <Button className='view-btn mr-5'>Download Map</Button></a>
+            <a href='https://tcp.goa.gov.in/wp-content/uploads/2019/02/land-use-plan/MormugaoTaluka/velsao-pale.jpg' target='_blank'> <Button className='view-btn mr-5'>Download Map</Button></a>
           </div>
 
           <div className='region-Image'>

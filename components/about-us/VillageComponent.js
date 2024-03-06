@@ -29,7 +29,7 @@ const VillageComponent = () => {
       
         {crData!==null?
         <div className=''>
-        <Card className='abt-card mb-5' title={<span className='abt-title-box'><Image src={'https://res.cloudinary.com/depg2aab2/image/upload/v1665070376/vp/nagoa/info_hzkwx2.png'} alt='' height={35} width={35} /><span className='abt-card-head-title sp-c'>About VP Pissurlem </span></span>}>
+        <Card className='abt-card mb-5' title={<span className='abt-title-box'><Image src={'https://res.cloudinary.com/depg2aab2/image/upload/v1665070376/vp/nagoa/info_hzkwx2.png'} alt='' height={35} width={35} /><span className='abt-card-head-title sp-c'>About VP Velsao-Pale-Issorcim </span></span>}>
         <div className="mb-3" dangerouslySetInnerHTML={{ __html:crData!==null?crData.desc:<></>}} />
         <div className="mb-3" dangerouslySetInnerHTML={{ __html:crData!==null?crData.otherDesc:<></>}} />
             

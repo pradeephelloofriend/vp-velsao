@@ -73,10 +73,10 @@ const ProfileComponent = () => {
             </div> */}
               {/* <Image className='image prof-mp-mb' alt="example" src={'https://res.cloudinary.com/depg2aab2/image/upload/v1694516015/vp/nagargoa/nagarganvpanchayatMAPimgweb-final_mntwo0.png'} 
                 height={1400} width={1090}/> */}
-                <a href='https://tcp.goa.gov.in/wp-content/uploads/2019/02/land-use-plan/SattariTaluka/pissurlempanchayat.jpg' target='_blank'>
+                <a href='https://tcp.goa.gov.in/wp-content/uploads/2019/02/land-use-plan/MormugaoTaluka/velsao-pale.jpg' target='_blank'>
                 <Image
                   className='image' alt="example" 
-                  src='https://res.cloudinary.com/depg2aab2/image/upload/v1696588589/vp/pissurlem/pissurlempanchayat_yv71le.jpg'
+                  src='https://res.cloudinary.com/depg2aab2/image/upload/v1709100673/vp/%20Velsao-Pale-Issorcim/Velsao-Pale-IssorcimMap_napqmx.png'
                   height={500} width={500}/> 
                 </a>
                 
@@ -88,48 +88,48 @@ const ProfileComponent = () => {
           
           <div className='col-lg-7 col-md-12'>
             <div className='pf-content-block prof-text'>
-            <h4 className="display-6 mb-0 text-white" style={{position: 'relative', textAlign: 'center'}}>Pissurlem Profile</h4>
+            <h4 className="display-6 mb-0 text-white" style={{position: 'relative', textAlign: 'center'}}>Velsao-Pale-Issorcim Profile</h4>
             <div class="flex-container-prof1">
                 <div>
                   <p>Block / Taluka</p>
-                  <h2>Sattari</h2>
+                  <h2>Mormugao</h2>
                 </div>
 
                 <div>
                   <p>District</p>
-                  <h2>North Goa</h2>
+                  <h2>South Goa</h2>
                 </div>
 
-                <div>
+                <div> 
                   <p>State</p>
                   <h2> Goa </h2>
                 </div>
 
                 <div>
                   <p>Pincode </p>
-                  <h2> 403530 </h2>
+                  <h2> 403712 </h2>
                 </div>
               </div>
 
               <div class="flex-container-prof1">
                 <div>
                   <p>Population (Census 2011) </p>
-                  <h4>Total - 3287</h4>
-                  <h4>Male - 1619</h4>
-                  <h4>Female - 1668</h4>
+                  <h4>Total - 4351</h4>
+                  <h4>Male - 2187</h4>
+                  <h4>Female - 2164</h4>
                 </div>
 
                 <div>
                   <p>Households </p>
-                  <h4>With H.No - 824</h4>
-                  <h4>With EHN - 120</h4>
+                  <h4> H.No - 1845 </h4>
+                  {/* <h4>With EHN - 120</h4> */}
                 </div>
 
 
                 <div>
                   <p>Wards </p>
                   <h4>Ward - 07</h4>
-                  <h4>Hamlets - 15</h4>
+                  {/* <h4>Hamlets - 15</h4> */}
                 </div>
               </div>
 
@@ -138,28 +138,27 @@ const ProfileComponent = () => {
               <div class="flex-container-prof2">
                 <div>
                   <p>Assembly Constituency </p>
-                  <h2>18</h2>
-                  <h2>Poriem</h2>
+                  <h2>Cortalim</h2>
                 </div>
 
                 <div>
                   <p>Parliament Constituency </p>
-                  <h2>North Goa</h2>
+                  <h2>South Goa</h2>
                 </div>  
               </div>
 
-              <div class="flex-container-prof3">
+              {/* <div class="flex-container-prof3">
                 <div>
                   <h3>V.P Pissurlem</h3>
                   <h3>Total Geographical Area - 2029.7925 Ha</h3>
                   <Table dataSource={dataSource} columns={columns} />
-                  {/* <h6>Pissurlem 733.2018 Ha</h6>
+                  <h6>Pissurlem 733.2018 Ha</h6>
                   <h6>Ponshem 296.0275 Ha</h6>
                   <h6>Vagurem 276.3132 Ha</h6>
                   <h6>Codiem 175.1650 Ha</h6>
-                  <h6>Cumarcon 549.0850 Ha</h6> */}
+                  <h6>Cumarcon 549.0850 Ha</h6>
                 </div>
-              </div>
+              </div> */}
 
                 
             </div>
