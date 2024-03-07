@@ -12,7 +12,7 @@ import SwiperCore, {
 import { getSliderHomeData } from '../../lib/api';
 import { getVillageData } from '../../lib/api'
 // import abt1 from '../../public/img/abtus1a.png'
-import abt1 from '../../public/img/big_193821_big_172262_velsao-pale-VP.png'
+// import abt1 from '../../public/img/big_193821_big_172262_velsao-pale-VP.png'
 import { useRouter } from 'next/router'
 import { setTabKey } from '../../redux/menu/menuAction';
 import { connect } from 'react-redux';
