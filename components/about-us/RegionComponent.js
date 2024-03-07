@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import {useRouter} from 'next/router'
-import pmap from '../../public/img/velsao-pale.jpg'
+import pmap from '../../public/img/Velsao-Pale-IssorcimMap.jpg'
 import { Button } from 'antd'
 
 const RegionComponent = () => {
