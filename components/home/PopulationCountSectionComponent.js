@@ -29,12 +29,12 @@ const PopulationCountSectionComponent = () => {
                         <h3>Birth Information</h3>
                         <div className="row align-items-center counter-wrapper population-wh-anim">
                             <div className="col-md-6 text-center mb-1">
-                                <h6 className="counter-ct">15139</h6>
+                                <h3 className="counter-ct">2187</h3>
                                 <p style={{ color: 'black' }}>Male</p>
                             </div>
                             
                             <div className="col-md-6 text-center mb-5">
-                                <h3 className="counter-ct ">13880</h3>
+                                <h3 className="counter-ct ">2164</h3>
                                 <p style={{ color: 'black' }}>Female</p>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ const PopulationCountSectionComponent = () => {
                         <h3>Death Information</h3>
                         <div className="row align-items-center counter-wrapper population-wh-anim">
                             <div className="col-md-6 text-center mb-1">
-                                <h6 className="counter-ct">3698</h6>
+                                <h3 className="counter-ct">3698</h3>
                                 <p style={{ color: 'black' }}>Male</p>
                             </div>
                             
