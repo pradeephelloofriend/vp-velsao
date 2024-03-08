@@ -20,6 +20,7 @@ import PowerComponent from './PowerComponent';
 import HousetaxtestComponent from '../housetaxtest/HousetaxtestComponent';
 import PanchStaffComponent from './PanchStaffComponent';
 import ProjectComponent from './ProjectComponent';
+import TenureOfSarpanch from './TenureOfSarpanch';
 // import HousetaxtestComponent from './HousetaxtestComponent';
 
 const PmComponent = dynamic(
@@ -114,6 +115,8 @@ const AboutUsComponent = ({routeTitle,menuData,tabKey,setTabKey}) => {
                           <PanchStaffComponent />
                           :t.node.route.code == 'projects'?
                           <ProjectComponent />
+                          :t.node.route.code == 'tenure' ?
+                          <TenureOfSarpanch />
                           :
                           <TabDetailsComponent/>
                         }
