@@ -117,7 +117,7 @@ const Banner = ({sliderData, setTabKey}) => {
                         <div className='abt-us-img'>
                           <Image
                             alt="s1"
-                            src=" https://res.cloudinary.com/depg2aab2/image/upload/v1709098442/vp/%20Velsao-Pale-Issorcim/big_193821_big_172262_velsao-pale-VP_ijtr4h.png"
+                            src="https://res.cloudinary.com/depg2aab2/image/upload/v1709098442/vp/%20Velsao-Pale-Issorcim/big_193821_big_172262_velsao-pale-VP_ijtr4h.png"
                             height={300}
                             width={600}
                           />
