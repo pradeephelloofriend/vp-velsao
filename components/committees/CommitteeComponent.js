@@ -22,7 +22,8 @@ const  Committee = ({tabKey,routeTitle,menuData,cDetailData,routeUri,setTabKey})
         let isApiSubscribed = true;
         if(menuData.length>=1){
             const [data]=menuData.filter(d=>d.node.label==routeTitle)
-            //console.log('filterData',data)
+            // console.log('filterData',data)
+            // console.log('menuData',menuData)
             setMdata(data.node)
         }
         if(tabKey!==null){
@@ -81,7 +82,7 @@ const  Committee = ({tabKey,routeTitle,menuData,cDetailData,routeUri,setTabKey})
     
     
    const {title,desc}= router.query
-  //  console.log('crData',crData)
+   console.log('crData',crData)
    function onTabClickBtn(key,event){
     //console.log('event',event)
     setTabKey(key)
