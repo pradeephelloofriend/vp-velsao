@@ -1,81 +1,70 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react'
+import SpinningComponent from '../spin/SpinningComponent'
 import { Table } from 'antd';
-import { useRouter } from 'next/router';
-import SpinningComponent from '../../components/spin/SpinningComponent';
-import { getTenureOfSarpanch } from '../../lib/api';
+import { getPanchStaff, getTenureOfSarpanch } from '../../lib/api';
 
 const TenureOfSarpanch = () => {
-  const router = useRouter();
-  const [sData, setSData] = useState(null);
+    const [pnmData, setPnmData] = React.useState(null)
+    const [tnsData, setTnsData] = React.useState(null)
 
-  const columns = [
-    {
-      title: 'Tenure of Sarpanch from',
-      dataIndex: 'tenureSarpanchesFrom',
-      key: 'tenureSarpanchesFrom',
-      render: text => <a>{text}</a>,
-    },
-    {
-      title: 'Tenure of Sarpanch to',
-      dataIndex: 'tenureSarpanchesTo',
-      key: 'tenureSarpanchesTo',
-      render: text => <a>{text}</a>,
-    },
-    {
-      title: 'Designation',
-      dataIndex: 'designation',
-      key: 'designation',
-      render: text => <a>{text}</a>,
-    },
-    {
-      title: 'Name of Sarpanches',
-      dataIndex: 'nameOfSarpanches',
-      key: 'nameOfSarpanches',
-      render: text => <a>{text}</a>,
-    }
-  ];
+    React.useEffect(() => {
+      let isApiSubscribed = true
 
-  useEffect(() => {
-    let isApiSubscribed = true;
-
-    const fetchData = async () => {
-      try {
-        const cData = await getTenureOfSarpanch();
+      async function fetch() {
+        const pmdData = await getPanchStaff()
+        const tnData = await getTenureOfSarpanch()
+        console.log("t", tnData)
         if (isApiSubscribed) {
-          const formattedData = cData.map((element, idx) => ({
-            key: idx,
-            tenureSarpanchesFrom: element.tenureOfSarpanch.tenureSarpanchesFrom,
-            tenureSarpanchesTo: element.tenureOfSarpanch.tenureSarpanchesTo,
-            designation: element.tenureOfSarpanch.designation,
-            nameOfSarpanches: element.tenureOfSarpanch.nameOfSarpanches
-          }));
-          setSData(formattedData);
+            setPnmData(pmdData)
+            setTnsData(tnData)
         }
-      } catch (error) {
-        console.error('Error fetching data:', error);
       }
-    };
-
-    fetchData();
-
-    return () => {
-      isApiSubscribed = false;
-    };
-  }, []);
+    
+      fetch()
+      return () => {
+        isApiSubscribed = false;
+      }
+    }, [])
+    
+    console.log("pnmData : ", pnmData)
+    console.log("tnsData : ", tnsData)
 
   return (
-    <>
-      {sData !== null ? (
-        <div className="page-content">
-          <div className="scheme-block">
-            <Table bordered columns={columns} dataSource={sData} />
-          </div>
-        </div>
-      ) : (
-        <SpinningComponent />
-      )}
-    </>
-  );
-};
+    <div>
+        {tnsData !== null? 
+        
+        <div className='scrollable-div'>
+        <table className='cust_tbl'>
+            <thead>
+                <tr>
+                    <td className='text-center fw-bolder fs-20 fs-clr'>Tenure Sarpanches From</td>
+                    <td className='text-center fw-bolder fs-20 fs-clr'>Tenure Sarpanches To</td>
+                    <td className='text-center fw-bolder fs-20 fs-clr'>Designation</td>
+                    <td className='text-center fw-bolder fs-20 fs-clr'>Name of Sarpanches</td>
+                </tr>
+            </thead>
 
-export default TenureOfSarpanch;
+        { tnsData.tenureSarpanch.tenureInformation.map((m) =>
+        <tbody>
+            <tr>
+                {/* <td className='fs-15' style={{textAlign:'center'}}>{m.entry} </td> */}
+                <td className='px-10 fs-15' style={{textAlign:'center'}}>{m.tenureSarpanchesFrom}</td>
+                <td className='px-10 fs-15' style={{textAlign:'center'}}>{m.tenureSarpanchesTo}</td>
+                <td className='text-centre fs-15' style={{textAlign:'center'}}>{m.designation}</td>
+                <td className='text-centre fs-15' style={{textAlign:'center'}}>{m.nameOfSarpanch}</td>
+                
+            </tr>
+        </tbody>
+
+        )}
+        </table>
+
+        </div>
+        
+        
+        : <SpinningComponent/>}
+    </div>
+  )
+}
+
+export default TenureOfSarpanch

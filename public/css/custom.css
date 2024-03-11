@@ -5286,7 +5286,7 @@ width: 17%;
 }
 .abt-card .ant-card-head{
   min-height: 0;
-  background: #4625a4;
+  background: #718F94;
   padding: 0;
   border-bottom: 0px solid #f0f0f0;
     border-radius: 0px 0px 0 0;
@@ -5829,7 +5829,7 @@ button.close {
 .about-us-tab .ant-tabs-tab.ant-tabs-tab-active {
   color: #fff;
   /* background-color: #7f7544; */
-  background-color: #4625a4;
+  background-color: #718F94;
 }
 .about-us-tab .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
   color: #fff;
@@ -6413,7 +6413,7 @@ border: 0px;
 .fs-clr {
   /* background-color: #27E1C1;
   border: 1px solid #28375f; */
-  background-color: #4625a4;
+  background-color: #718F94;
   color: white;
   border: 1px solid #000000;
 }
@@ -7423,7 +7423,9 @@ padding-bottom: 24px;
 }
 
 .news-vw {
-  color: #4625a4;
+  color: #fff;
+    background-color: #718F94;
+    padding: 7px;
 }
 
 .news-vw:hover {
@@ -8114,7 +8116,7 @@ marquee {
 }
 
 .sar-profile {
-  background-color: beige;
+  background-color: #d6e3e6;
   box-shadow: 5px 10px 18px #888888;
 }
 
@@ -8128,7 +8130,7 @@ marquee {
 .ag-courses-item_bg {
   height: 188%;
   width: 55%;
-  background-color: #f9b1349e;
+  background-color: #dad5cb9e;
   z-index: 1;
   position: absolute;
   top: -58px;
@@ -8222,75 +8224,55 @@ marquee {
 }
 .first-div {
   background-color: red;
-  position: relative;
-  overflow: hidden;
-  width: max-content;
-}
-.first-div::before,
-.first-div::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 50%; /* Adjust to control slanting length */
-  height: 100%;
-  background-color: red; /* Background color of slanted area */
-  z-index: -1;
 }
 
-.first-div::before {
-  left: 0;
-  transform: skewX(-20deg); /* Adjust skew degree for left slant */
-}
 
 .first-div::after {
   right: 0;
   transform: skewX(20deg); /* Adjust skew degree for right slant */
 }
-.first-div li {
+.first-div div {
   padding: 30px;
   color: white;
 }
 .second-div {
   background-color: green;
 }
-.second-div li {
+.second-div div {
   padding: 30px;
   color: white;
 }
 .third-div {
   background-color: blue;
 }
-.third-div li {
+.third-div div {
   padding: 30px;
   color: white;
 }
 .fourth-div {
   background-color: orange;
 }
-.fourth-div li {
+.fourth-div div {
   padding: 30px;
   color: white;
 }
 .fifth-div {
   background-color: black;
 }
-.fifth-div li {
+.fifth-div div {
   padding: 30px;
   color: white;
 }
 .sixth-div {
   background-color: purple;
 }
-.sixth-div li {
+.sixth-div div {
   padding: 30px;
   color: white;
 }
-.all-links li a {
+/* .all-links div a {
   font-size: 20px;
-}
-.all-links {
-  padding: 0px 151px 0px 223px ;
-}
+} */
 .icon-div {
   vertical-align: middle;
   font-size: 20px;
@@ -8345,7 +8327,9 @@ marquee {
 }
 
 .button-class {
-  padding: 0px 288px 0px 266px 
+  /* padding: 0px 288px 0px 266px  */
+  display: flex;
+  justify-content: center;
 }
 .new-class {
   position: relative;
@@ -8415,7 +8399,7 @@ marquee {
 
 }
 .new-chap {
-  background-image: url('/img/development/s4.jpg');
+  background-image: url('/img/development/img1.jpg');
 }
 .tab-class .ant-tabs-nav .ant-tabs-tab {
   border-bottom: 2px solid black;
@@ -8449,4 +8433,10 @@ marquee {
   padding: 10px;
   position: relative;
   top: -30px;
+}
+.rec-card img {
+  height: 251px;
+}
+.c-footer p {
+  cursor: pointer;
 }

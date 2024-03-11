@@ -61,8 +61,8 @@ function IntroComponent() {
             <Card>
                 <img className='img1' src='https://crushersagarwalla.com/wp-content/uploads/2022/10/Group-1079.svg' />
                 <div className='new-class'>
-                <p > Village Panchayat Pissurlem was established in the year 1962. It is located in revenue village Pissurlem, Taluka-Sattari, District-North Goa of Goa State, India, constituency 18 Poriem. It is about 32 Km towards East from district headquarter and State capital Panaji, Tiswadi Goa and about 10 Km from block headquarter Valpoi, Sattari Goa. Total 5 revenue villages namely Pissurlem, Ponshem, Vagurem, Codiem and Cumarcon divided into 7 election/administrative wards lie within jurisdiction of Village Panchayat Pissurlem. </p>
-                     <p>Village Panchayat Pissurlem is a C Type category Gram Panchayat with total geographical within its jurisdiction as 2029.7925 Hectares....</p>
+                <p > The Village Panchayat of Velsao-Pale-Issorcim is nestled along the picturesque and refreshing coastal belt of Velsao. Within this charming village, you will find two stunning beaches – Velsao Beach and Hollant Beach in Issorcim Village. The population of this Village Panchayat is approximately 4399, with fishing and agriculture/farming serving as the primary occupations for its residents. </p>
+                     <p>Velsao-Pale is a Village located in the Mormugao Taluk in the South Goa District of Goa State, India. Positioned 14 KM north from the District headquarters of Margao and 7 KM from Mormugao, this village is conveniently situated 18 KM from the State capital of Panaji.</p>
                      <div className='button-class'>
                      <Button onClick={() => goToPage('about-us/village', 'village', 'Village', 'About Us', '/village/', 'No')}
                                 href="#">Read More</Button></div>
@@ -72,7 +72,7 @@ function IntroComponent() {
   </Card>
   </div>
   <div className='col-md-5'>
-    <img className='img4' src='/img/IMG_20230908_110355.jpg' />
+    <img className='img4' src='/img/velsao_panchyat.png' />
   </div>
   </div>
   </div>
