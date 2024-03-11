@@ -47,65 +47,63 @@ const NewOtherLinks = ({setTabKey}) => {
     }
 
     return (
-        <div className='all-links'>
-            <div className=' d-flex '>
+        <div className='all-links container'>
                 <div className='first-div'>
-                                                    <li onClick={() =>goToPage('reporting/admin-and-audit','admin-and-audit','Admin and Audit','Reporting','/admin-and-audit/','Yes')}>
+                                                    <div onClick={() =>goToPage('reporting/admin-and-audit','admin-and-audit','Admin and Audit','Reporting','/admin-and-audit/','Yes')}>
                                                         <span>
                                                         <AuditOutlined className='icon-div'/>
                                                         </span>
                                                         {/* <span></span> */}
                                                         <a>Admin & Audit</a>
                                                         {/* <p>hello</p> */}
-                                                    </li>
+                                                    </div>
                                                     </div>
                                                     <div className='second-div'>
-                                                    <li onClick={() =>goToPage('reporting/grants-received','grants-received','Grants Received','Reporting','/grants-received/','Yes')}>
+                                                    <div onClick={() =>goToPage('reporting/grants-received','grants-received','Grants Received','Reporting','/grants-received/','Yes')}>
                                                         <span>
                                                             <LikeOutlined className='icon-div'/>
                                                         </span>
                                                         <a>Grants Received</a>
                                                         {/* <p>hello</p> */}
-                                                    </li>
+                                                    </div>
                                                     </div>
                                                     <div className='third-div'>
-                                                    <li onClick={() =>goToPage('reporting/tenders','tenders','Tenders','Reporting','/tenders/','Yes')}>
+                                                    <div onClick={() =>goToPage('reporting/tenders','tenders','Tenders','Reporting','/tenders/','Yes')}>
                                                         <span>
                                                             <BookOutlined className='icon-div'/>
                                                         </span>
                                                         <a>Tenders</a>
                                                         {/* <p>hello</p> */}
-                                                    </li>
+                                                    </div>
                                                     </div>
                                                     <div className='fourth-div'>
-                                                    <li onClick={() =>goToPage('reporting/applications','applications','Applications','Reporting','/applications/','Yes')}>
+                                                    <div onClick={() =>goToPage('reporting/applications','applications','Applications','Reporting','/applications/','Yes')}>
                                                     <span>
                                                         <FormOutlined className='icon-div'/>
                                                         </span>
                                                         <a>Applications</a>
                                                         {/* <p>hello</p> */}
-                                                    </li>
+                                                    </div>
                                                     </div>
                                                     <div className='fifth-div'>
-                                                    <li onClick={() =>goToPage('about-us/panchayat-members','panchayat-members','Panchayat Members','About Us','/panchayat-members/','Yes')}>
+                                                    <div onClick={() =>goToPage('about-us/panchayat-members','panchayat-members','Panchayat Members','About Us','/panchayat-members/','Yes')}>
                                                     <span>
                                                         <TeamOutlined className='icon-div'/>
                                                         </span>
                                                         <a>Members</a>
                                                         {/* <p>hello</p> */}
-                                                    </li>
+                                                    </div>
                                                     </div>
                                                     <div className='sixth-div'>
-                                                    <li onClick={() =>goToPage('about-us/projects','projects','Projects Members','About Us','/projects/','Yes')}>
+                                                    <div onClick={() =>goToPage('about-us/projects','projects','Projects Members','About Us','/projects/','Yes')}>
                                                     <span>
                                                         <ProjectOutlined className='icon-div'/>
                                                         </span>
                                                         <a>Projects</a>
                                                         {/* <p>hello</p> */}
-                                                    </li>
+                                                    </div>
                                                     </div>
                                                 </div>
-        </div>
        
          
     )

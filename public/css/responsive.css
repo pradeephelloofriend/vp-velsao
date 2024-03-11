@@ -12,6 +12,10 @@ height: 1.2em;
     .modal-view .modal-lg{
         max-width: 1009px !important;
     }
+    .all-links {
+        display: flex;
+        justify-content: center;
+      }
 }
 @media only screen and (max-width: 10560px) {
     .logo-mob {
@@ -344,8 +348,54 @@ height: 1.2em;
     .card-mp {
         width: 86% !important;
     }
+    .fifly-left .ant-card-body {
+        height: 706px;
+    }
+    .button-class {
+        display: flex;
+        justify-content: center;
+    }
+    .fifly-left .img4 {
+        padding-top: 0px;
+    }
+    .news-block::after {
+        content: '';
+        width: 14px;
+        height: 0;
+        border-top: 434px solid #eef2fb;
+        border-bottom: 288px solid #eef2fb;
+        border-left: 126px solid #BFC8AD;
+        position: absolute;
+        top: 82%;
+        right: 0px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .news-block {
+        position: relative;
+        padding: 5px 125px 41px 10px;
+        background-color: #BFC8AD;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    .news-content p {
+        font-size: 13px;
+    }
+    .fifly-left .img3 {
+        display: none;
+    }
+    #home-heading {
+        position: relative;
+        min-height: 409px;
+    }
+    .dark-overlay {
+        height: 407px;
+    }
 }
 @media only screen and (max-width: 575px) {
+
     .news-bgm-anim-duplicate3::before {
         position: absolute;
         content: "";

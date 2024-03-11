@@ -28,6 +28,32 @@ import {selectFootData} from '../../redux/footer/footSelector';
          <>
              <footer className='c-footer'>
                  <div className="container-fluid pb-2 mt-5 mt-md-5">
+                    <div className='row'>
+                        <div className='col-md-4'>
+                        <h6 className='mb-5 text-white text-decoration-underline'> Helpline Contact </h6>
+                                <p className='text-white'>Police – <b>100</b></p>
+                                <p className='text-white'>Fire – <b>101</b></p>
+                                <p className='text-white'>Ambulance –  <b>102</b></p>
+                                <p className='text-white'>Women Helpline - <b>1091</b></p>
+                                <p className='text-white'>Child Helpline - <b>1098</b></p>
+                        </div>
+                        <div className='col-md-4'>
+                        <h6 className='mb-5 text-white text-decoration-underline'> Quick Links </h6>
+                                <p onClick={() =>goToPage('reporting/admin-and-audit','admin-and-audit','Admin and Audit','Reporting','/admin-and-audit/','Yes')} className='text-white'>Admin & Audit</p>
+                                <p onClick={() =>goToPage('reporting/grants-received','grants-received','Grants Received','Reporting','/grants-received/','Yes')} className='text-white'>Grants Received</p>
+                                <p onClick={() =>goToPage('reporting/tenders','tenders','Tenders','Reporting','/tenders/','Yes')} className='text-white'>Tenders</p>
+                                <p onClick={() =>goToPage('reporting/applications','applications','Applications','Reporting','/applications/','Yes')} className='text-white'>Applications</p>
+                                <p onClick={() =>goToPage('about-us/panchayat-members','panchayat-members','Panchayat Members','About Us','/panchayat-members/','Yes')} className='text-white'>Members</p>
+                                <p onClick={() =>goToPage('about-us/projects','projects','Projects Members','About Us','/projects/','Yes')} className='text-white'>Projects</p>
+                       
+                        </div>
+                        <div className='col-md-4'>
+                        <h6 className='mb-5 text-white text-decoration-underline'> Contact Details </h6>
+                                <p className='text-white'>Address:Village Panchayat Velsao Pale 120, MDR43, Consua, Goa 403712</p>
+                                <p className='text-white'>Phone number: +91 84089 16719</p>
+                                <p className='text-white'>Email: info@gmail.com</p>
+                        </div>
+                    </div>
                      
                     <div className='f-link'>
                         <nav className="nav social social-muted mb-0 justify-content-center">
@@ -61,7 +87,7 @@ import {selectFootData} from '../../redux/footer/footSelector';
                      <div className='row'>
                         <div className='col-md-4 col-sm-12'></div>
 
-                        <div className='col-md-4 col-sm-12'>
+                        {/* <div className='col-md-4 col-sm-12'>
                             <div className="c-footer-pd text-center ft-addrs">
                                 <p className="mb-2 mb-lg-0 adress-block">
                                     <span className='mr-5'><i className="fa fa-map-marker" aria-hidden="true"></i> HNo. 42, Gaonkarwada, Pissurlem Sattari North Goa, 403530</span>
@@ -69,7 +95,7 @@ import {selectFootData} from '../../redux/footer/footSelector';
                                     <span className='mr-5'> <i className="fa fa-envelope-o" aria-hidden="true"></i> vppissurlem01@gmail.com</span></p>
 
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className='col-md-4 col-sm-12'>
                         <div className="c-footer-pd text-center ft-addrs wrapper-ft" style={{ display : 'none'}}>
@@ -81,7 +107,7 @@ import {selectFootData} from '../../redux/footer/footSelector';
                      
 
                      <div className="c-footer-pd text-center ft-rights">
-                        <p className="mb-2 mb-lg-0">© 2023 VPPissurlem. All rights reserved.</p>
+                        <p className="mb-2 mb-lg-0">© 2023 VPVelsaoPaleIssorcim. All rights reserved.</p>
                      </div>
 
                      </div>

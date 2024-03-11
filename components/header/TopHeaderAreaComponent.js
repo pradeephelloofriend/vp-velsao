@@ -47,11 +47,11 @@ const TopHeaderAreaComponent = ({setRegStatus,cUser}) => {
                                     
                                     <a href="mailto:hello@surety.com" className="me-xl-8 text-icon-blue ">
                                     <i className="fa fa-envelope-o me-xl-1"></i>
-                                        Email: vppissurlem01@gmail.com
+                                        Email: info@gmail.com
                                     </a>
                                     <a href="tel:+822456974" className="me-xl-8 text-icon-blue">
                                     <i className="fa fa-mobile me-xl-1"></i>
-                                        Call Us For Inquiry: +91 84462 98664
+                                        Call Us For Inquiry: +91 84089 16719
                                     </a>
                                     {/* <a onClick={()=> newClick()} className=" me-xl-8 text-black">
                                     <i className="fa fa-angle-double-right me-xl-1"></i>

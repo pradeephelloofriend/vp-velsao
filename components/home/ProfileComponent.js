@@ -118,7 +118,8 @@ const ProfileComponent = () => {
                   <h4>Male - 2187</h4>
                   <h4>Female - 2164</h4>
                 </div>
-
+                </div>
+                <div class="flex-container-prof1">
                 <div>
                   <p>Households </p>
                   <h4> H.No - 1845 </h4>

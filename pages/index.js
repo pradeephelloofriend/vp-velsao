@@ -40,18 +40,18 @@ const index = ({isLoading}) => {
             <MarqComponent />
             <Sliderbanner/>
             <NewOtherLinks />
+            <NewsSectionComponent />
             {/* <OtherLinks /> */}
             {/* <StepsComponent/> */}
             {/* <Banner /> */}
             <IntroComponent />
-            <NewsSectionComponent />
             {/* <HallBookButtonComponent/> */}
             {/* <PosterComponent /> */}
             
             <ProfileComponent/>
             <OtherLinksComponent/> 
-            <PopulationSectionComponent/>
             <FacilitesComponent/>
+            <PopulationSectionComponent/>
             <Schemes/>
             <OurClientsComponent/>
             <MapComponent/>

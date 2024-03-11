@@ -82,13 +82,13 @@ const NewsSectionComponent = ({setTabKey,devData}) => {
   return (
       <>
           {/* <section className="wrapper news-bgm-anim news-bgm-anim-duplicate1"> */}
-          <section className="wrapper abt_sec news-bgm-anim pb-10">
-              <div className="py-10 py-md-10 pb-md-10">
+          <section className="wrapper abt_sec news-bgm-anim">
+              {/* <div className=" py-md-10 pb-md-10"> */}
                   <div className="row px-4">
                       
 
 
-                      <div className="col-md-6 col-xl-7  news-bgm-anim-duplicate2" style={{display: 'none'}}>
+                      <div className="col-md-4 col-xl-4  news-bgm-anim-duplicate2" style={{display: 'none'}}>
                         <div className='dev-card'>
                           <Card className='dev0-card recent-devs abt-card' 
                           title={
@@ -114,14 +114,14 @@ const NewsSectionComponent = ({setTabKey,devData}) => {
 
 
 
-                      <div className="col-md-6 col-xl-6 news-rw">
+                      <div className="col-md-5 col-xl-5 news-rw">
                          <LatestNewsComponent/>
                       </div>
 
-                      <div className="col-md-6 col-xl-6 news-rw">
+                      <div className="col-md-7 col-xl-7 news-rw">
                         <div className='row'>
 
-                        <div className="col-md-7 col-xl-7">
+                        <div className="col-md-6 col-xl-6">
                           <Card className='abt-card bg-c-blue2 mb-5' >    
                             <div className='add_mem_block'>
 
@@ -146,8 +146,8 @@ const NewsSectionComponent = ({setTabKey,devData}) => {
                         </div>
                           
 
-                          <div className='col-md-5 col-sm-12'>
-                            <div>
+                          <div className='col-md-6 col-sm-12'>
+                            {/* <div>
                               <div className='top_head_bar' style={{marginBottom : '45px'}}>
                                 <div className='th_title'>
                                   <h4>Socials</h4>
@@ -161,7 +161,33 @@ const NewsSectionComponent = ({setTabKey,devData}) => {
                                 options={{ height: 300, width: "auto"}}
                                 onLoad={handleLoad}
                               />
-                            </div>
+                            </div> */}
+                             <div>
+                <h2>Recent Development works</h2>
+              </div>
+              <Card className='rec-card mb-5' style={{ backgroundColor: "#d4d4d4", margin: '0% 0px' }}>
+              <Carousel fade>
+                    {rdData !== null ? rdData.map((i, index) =>
+                      <Carousel.Item key={index}>
+                        <div style={{ position: 'relative' }}>
+                          <img className="d-block w-100" alt="s1" src={i.developments.image.sourceUrl} />
+                          <div className='rec-dev-text'>
+                            {i.developments.title !== null ?
+                              <span className='text-white'>{i.developments.title}</span>
+                              :
+                              <></>
+                            }
+                          </div>
+                        </div>
+
+                      </Carousel.Item>
+                    ) : <></>}
+                  </Carousel>
+              </Card>
+
+
+
+
                           </div>
                         </div>
 
@@ -170,10 +196,7 @@ const NewsSectionComponent = ({setTabKey,devData}) => {
 <div className='pt-5'>
                       <PopulationCountSectionComponent/>
 </div>
-<div className='px-4'>
-                   <RecentDevComponent />
-</div>
-                  </div>
+                  {/* </div> */}
           </section>
       </>
   )
