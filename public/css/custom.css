@@ -6057,7 +6057,7 @@ background-size:cover;
   font-weight: 500;
 }
 .profile-section {
-  background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1709098442/vp/%20Velsao-Pale-Issorcim/big_193821_big_172262_velsao-pale-VP_ijtr4h.png');
+  background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1710191871/vp/%20Velsao-Pale-Issorcim/PanchayatPhto_qd9bkf.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed !important;
@@ -6168,7 +6168,7 @@ justify-content: flex-start;
 }
 .ol-gov .ant-card-body{
   /* background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1691660809/vp/Chicalim/vpchic_fogufz.jpg'); */
-  background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1709098442/vp/%20Velsao-Pale-Issorcim/big_193821_big_172262_velsao-pale-VP_ijtr4h.png');
+  background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1709185436/vp/%20Velsao-Pale-Issorcim/big_193821_big_172262_velsao-pale-VP_tshzxv.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -8371,11 +8371,14 @@ marquee {
 #home-heading
 {
     position: relative;
+    margin-top: 2px;
     min-height: 200px;
-    background: url('/img/landscape.jpg');
+    background: url('/img/imgte12.jpg');
     background-attachment: fixed;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     text-align: center;
+    text-decoration: solid;
     color: #fff;
 }
 .dark-overlay

@@ -4,7 +4,7 @@ import React from 'react'
 const ProjectComponent = () => {
   return (
     <div>
-        <h4>VP Pissurlem</h4>
+        <h4>VP Velsao-Pale-Issorcim</h4>
         <a href='' target='_blank'>Project</a>
         <Divider/>
         <h4>MGNREGA</h4>
