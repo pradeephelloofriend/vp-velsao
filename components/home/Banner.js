@@ -117,7 +117,7 @@ const Banner = ({sliderData, setTabKey}) => {
                         <div className='abt-us-img'>
                           <Image
                             alt="s1"
-                            src='/img/velsao_panchyat.png'
+                            src='/img/PanchayatVelsao.jpg'
                             height={300}
                             width={600}
                           />

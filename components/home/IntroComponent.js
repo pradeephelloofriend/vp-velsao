@@ -72,7 +72,7 @@ function IntroComponent() {
   </Card>
   </div>
   <div className='col-md-5'>
-    <img className='img4' src='/img/velsao_panchyat.png' />
+    <img className='img4' src='/img/PanchayatVelsao.jpg' />
   </div>
   </div>
   </div>

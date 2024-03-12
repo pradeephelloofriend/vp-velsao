@@ -90,9 +90,9 @@ import {selectFootData} from '../../redux/footer/footSelector';
                         {/* <div className='col-md-4 col-sm-12'>
                             <div className="c-footer-pd text-center ft-addrs">
                                 <p className="mb-2 mb-lg-0 adress-block">
-                                    <span className='mr-5'><i className="fa fa-map-marker" aria-hidden="true"></i> HNo. 42, Gaonkarwada, Pissurlem Sattari North Goa, 403530</span>
+                                    <span className='mr-5'><i className="fa fa-map-marker" aria-hidden="true"></i> HNo. 42, Gaonkarwada, Velsao-Pale-Issorcim Sattari North Goa, 403530</span>
                                     <span className='mr-5'><i className="fa fa-phone" aria-hidden="true"></i>+91 84462 98664</span>
-                                    <span className='mr-5'> <i className="fa fa-envelope-o" aria-hidden="true"></i> vppissurlem01@gmail.com</span></p>
+                                    <span className='mr-5'> <i className="fa fa-envelope-o" aria-hidden="true"></i> Velsao-Pale-Issorcim@gmail.com</span></p>
 
                             </div>
                         </div> */}
