@@ -66,7 +66,7 @@ const PopulationSectionComponent = () => {
 
 <div className='new-chap'>
 <div className='container'>
-    <p>"Various schemes are being implemented by the Ministry of Agriculture to ensure that every citizen of the country can eat nutritious and fresh food and stay healthy. One of them is Ragi crop."</p>
+    <p>"Surrounded by stunning coconut trees and a tranquil atmosphere is a picturesque beach positioned in Goa known as <b>Velsao Beach."</b></p>
 </div>
 </div>
 

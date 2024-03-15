@@ -96,7 +96,7 @@ const ProfileComponent = () => {
                 </div>
 
                 <div>
-                  <p>District</p>
+                  <p>District / Parliament Constituency</p>
                   <h2>South Goa</h2>
                 </div>
 
@@ -109,44 +109,35 @@ const ProfileComponent = () => {
                   <p>Pincode </p>
                   <h2> 403712 </h2>
                 </div>
-              </div>
+                
 
+              </div>
               <div class="flex-container-prof1">
                 <div>
-                  <p>Population (Census 2011) </p>
-                  <h4>Total - 4351</h4>
-                  <h4>Male - 2187</h4>
-                  <h4>Female - 2164</h4>
-                </div>
-                </div>
-                <div class="flex-container-prof1">
-                <div>
                   <p>Households </p>
-                  <h4> H.No - 1845 </h4>
+                  <h1> 1845 </h1>
                   {/* <h4>With EHN - 120</h4> */}
                 </div>
-
-
                 <div>
-                  <p>Wards </p>
-                  <h4>Ward - 07</h4>
+                  <h4>Wards </h4>
+                  <h1><b>07</b></h1>
                   {/* <h4>Hamlets - 15</h4> */}
                 </div>
-              </div>
-
-              
-
-              <div class="flex-container-prof2">
                 <div>
                   <p>Assembly Constituency </p>
                   <h2>Cortalim</h2>
                 </div>
-
-                <div>
-                  <p>Parliament Constituency </p>
-                  <h2>South Goa</h2>
-                </div>  
               </div>
+              <div class="flex-container-prof1">
+                <div>
+                  <p>Population (Census 2011) </p>
+                  <h1>4351</h1>
+                  <p>Male - 2187</p>
+                  <p>Female - 2164</p>
+                </div>
+                </div>
+              
+              
 
               {/* <div class="flex-container-prof3">
                 <div>
