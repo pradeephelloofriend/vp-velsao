@@ -119,7 +119,7 @@ const ProfileComponent = () => {
                   {/* <h4>With EHN - 120</h4> */}
                 </div>
                 <div>
-                  <h4>Wards </h4>
+                  <p>Wards </p>
                   <h1><b>07</b></h1>
                   {/* <h4>Hamlets - 15</h4> */}
                 </div>
