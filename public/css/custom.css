@@ -7689,26 +7689,26 @@ content: "";
 }
 .news-block {
   position: relative;
-  padding: 6px 101px 6px 6px;
+  padding: 6px 6px 6px 6px;
   background-color: #BFC8AD;
   border-radius: 4px;
   margin-bottom: 10px;
   overflow: hidden; /* To hide overflow from slanted pseudo-elements */
 }
-.news-block::after {
+/* .news-block::after {
   content: '';
   width: 14px;
   height: 0;
   border-top: 210px solid #eef2fb;
   border-bottom: 155px solid #eef2fb;
-  border-left: 99px solid #BFC8AD;
+  border-left: -px solid #BFC8AD;
   position: absolute;
   top: 82%;
   right: 0px;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   transform: translateY(-50%);
-}
+} */
 
 
 .news-content p {

@@ -358,7 +358,7 @@ height: 1.2em;
     .fifly-left .img4 {
         padding-top: 0px;
     }
-    .news-block::after {
+    /* .news-block::after {
         content: '';
         width: 14px;
         height: 0;
@@ -371,7 +371,7 @@ height: 1.2em;
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
         transform: translateY(-50%);
-    }
+    } */
     .news-block {
         position: relative;
         padding: 5px 125px 41px 10px;
