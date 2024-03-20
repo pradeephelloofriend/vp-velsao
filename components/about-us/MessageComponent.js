@@ -43,8 +43,8 @@ const MessageComponent = () => {
                   }
               {/* <Image src={'https://res.cloudinary.com/depg2aab2/image/upload/v1694515162/vp/nagargoa/sarpanchpic1-min_tek5ic.png'} alt='' height={200} width={200} /> */}
             </div>
-            <h4 className='text-center' style={{paddingTop : '15px'}}>Devanand Vassant Parab</h4>
-            <h6 className='text-center'>Contact : 9823236788</h6>
+            <h4 className='text-center' style={{paddingTop : '15px'}}>Maria Diana Francisco A.J. Gouveia</h4>
+            <h6 className='text-center'>Contact : 9404756182</h6>
           </div>
         </div>
 

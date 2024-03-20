@@ -12,7 +12,7 @@ import SwiperCore, {
 import { getSliderHomeData } from '../../lib/api';
 import { getVillageData } from '../../lib/api'
 // import abt1 from '../../public/img/abtus1a.png'
-import abt1 from '../../public/img/IMG_20230908_110355.jpg'
+// import abt1 from '../../public/img/big_193821_big_172262_velsao-pale-VP.png'
 import { useRouter } from 'next/router'
 import { setTabKey } from '../../redux/menu/menuAction';
 import { connect } from 'react-redux';
@@ -88,10 +88,12 @@ const Banner = ({sliderData, setTabKey}) => {
                               ) : null} */}
 
                               <p>
-                              Village Panchayat Pissurlem was established in the year 1962. It is located in revenue village Pissurlem, Taluka-Sattari, District-North Goa of Goa State, India, constituency 18 Poriem. It is about 32 Km towards East from district headquarter and State capital Panaji, Tiswadi Goa and about 10 Km from block headquarter Valpoi, Sattari Goa. Total 5 revenue villages namely Pissurlem, Ponshem, Vagurem, Codiem and Cumarcon divided into 7 election/administrative wards lie within jurisdiction of Village Panchayat Pissurlem.
+                              The Village Panchayat of Velsao-Pale-Issorcim is nestled along the picturesque and refreshing coastal belt of Velsao. Within this 
+                              charming village, you will find two stunning beaches - Velsao Beach and Hollant Beach in Issorcim Village.
                               </p>
                               <p>
-                              Village Panchayat Pissurlem is a C Type category Gram Panchayat with total geographical within its jurisdiction as 2029.7925 Hectares....
+                              The population of this Village Panchayat is approximately 4399, with fishing and agriculture/farming serving as the primary occupations for its residents.....
+
                               </p>
 
                               <a
@@ -115,7 +117,7 @@ const Banner = ({sliderData, setTabKey}) => {
                         <div className='abt-us-img'>
                           <Image
                             alt="s1"
-                            src={abt1}
+                            src='/img/PanchayatVelsao.jpg'
                             height={300}
                             width={600}
                           />

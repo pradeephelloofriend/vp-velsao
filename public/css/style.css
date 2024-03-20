@@ -182,7 +182,8 @@ h6 {
 
 p {
     margin-top: 0;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    padding: 1px;
 }
 
 abbr[data-bs-original-title],
@@ -4634,7 +4635,7 @@ textarea.form-control.is-invalid {
     color: #ffff;
     text-align: left;
     list-style: none;
-    background-color: #4625a4 !important;
+    background-color: #718F94 !important;
     background-clip: none !important;
     border: 0 !important;
     box-shadow: none !important;
@@ -5679,7 +5680,7 @@ textarea.form-control.is-invalid {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #ffffff
+    color: #000
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -5763,7 +5764,7 @@ textarea.form-control.is-invalid {
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(164, 174, 198, .2);
-    border-radius: .4rem
+    /* border-radius: .4rem */
 }
 
 .card>hr {
@@ -31980,7 +31981,7 @@ fieldset:disabled .btn.btn-circle {
     margin-left: .2rem;
     vertical-align: .15rem;
     content: "\e900";
-    color: #ffffff;
+    color: #000;
 }
 
 @media (max-width:991.98px) {

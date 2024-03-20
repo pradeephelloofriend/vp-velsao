@@ -3,63 +3,62 @@ import {Card} from 'antd'
 const OtherLinksComponent = () => {
   return (
     <section className="wrapper bg-light ol-section " >
-        <div className="container py-10 py-md-10 pb-md-10">
             <div className='row card-deck container-othr '>
                 <div className='col-md-3'>
                     <Card className='ol-card ol-hos card hover-othr'
-                    title={<b> Hospitals near Pissurlem</b>}
+                    title={<b> Hospitals near Velsao-Pale-Issorcim </b>}
                     >
                         <div className='ol-box'>
                             <ul className='text-wh'>
-                                <li>Laxmi Dental Clinic</li>
-                                <li>Harvale Health Centre</li>
-                                <li>Chethan Hospital</li>
-                                <li>Chaitanya Hospital</li>
-                                <li>Health Center Poriem</li>
+                                <li>SKIN; Dermatalogy & Cosmetalogy clinic</li>
+                                <li>Clinic (Dr. Mrs. Preeti Patil)</li>
+                                <li>Apna Clinic</li>
+                                <li>Cansaulim PHC</li>
+                                {/* <li>Health Center Poriem</li> */}
                             </ul>
                         </div>
                     </Card>
                 </div>
                 <div className='col-md-3'>
                     <Card className='ol-card ol-tur card hover-othr'
-                    title={<b>Tourist Places Near Pissurlem</b>}
+                    title={<b>Tourist Places Near Velsao-Pale-Issorcim</b>}
                     >
                         <div className='ol-box'>
                             <ul className='text-wh'>
-                                <li>Harvalem Waterfalls</li>
-                                <li>Arvalem Caves</li>
-                                <li>Shree Ajoba temple</li>
-                                <li>Ruins of Surya Temple</li>
-                                <li>Sonshe waterfall</li>
-                                <li>Navdurga temple PISSURLEM</li>
+                                <li>Pale Pond</li>
+                                <li>Velsao Beach</li>
+                                <li>Goa Beach Private Property and Picnic spot</li>
+                                <li>Wow celebration deck</li>
+                                <li>Velsao Spring</li>
+                                {/* <li>Navdurga temple PISSURLEM</li> */}
                             </ul>
                         </div>
                     </Card>
                 </div>
                 <div className='col-md-3'>
                     <Card className='ol-card ol-park card '
-                    title={<b>Local Parks near Pissurlem</b>}
+                    title={<b>Local Parks near Velsao-Pale-Issorcim</b>}
                     >
                         <div className='ol-box'>
                             <ul className='text-wh'>
-                                <li>Marcel Park</li>
-                                <li>HBC Children Park</li>
-                                <li>Vasant Nagar Children's Park</li>
-                                <li>Children's Park</li>
+                                <li>Housing Board Park</li>
+                                <li>Library Lawn</li>
+                                <li>VGH Lawns</li>
+                                {/* <li>Children's Park</li> */}
                                 <br/>
                             </ul>
                         </div>
-                    </Card>
+                    </Card>   
                 </div>
                 <div className='col-md-3'>
                     <Card className='ol-card ol-gov card hover-othr'
-                    title={<b>Government Offices near Pissurlem</b>}
+                    title={<b>Government Offices near Velsao-Pale-Issorcim</b>}
                     >
                         <div className='ol-box'>
                             <ul className='text-wh'>
-                                <li>Zonal Agriculture Office</li>
+                                <li>PWD Water Pumping Station</li>
                                 <li>Village Panchayat</li>
-                                <li>Goa Electricity Department Sub Station Pale</li>
+                                <li>GAIL India</li>
                             </ul>
                         </div>
                     </Card>
@@ -73,7 +72,6 @@ const OtherLinksComponent = () => {
                   <div class="wave"></div>
                   <div class="wave"></div>
               </div> */}
-        </div>
     </section>
   )
 }

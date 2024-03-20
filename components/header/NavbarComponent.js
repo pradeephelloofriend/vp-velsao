@@ -79,7 +79,7 @@ class NavbarComponent extends Component {
             {/* <TopHeaderAreaComponent/> */}
             
             {/* <NavbarSecondComponent/> */}
-            <Navbar className={bg} hidden={nav} collapseOnSelect sticky={sticky} expand="lg">
+            <Navbar className={`py-5 ${bg}`} hidden={nav} collapseOnSelect sticky={sticky} expand="lg">
                 <Container>
                    {/* <Navbar.Brand onClick={()=>this.goToHome() } >Camorlim</Navbar.Brand>*/}
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

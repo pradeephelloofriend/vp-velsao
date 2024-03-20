@@ -47,11 +47,11 @@ const TopHeaderAreaComponent = ({setRegStatus,cUser}) => {
                                     
                                     <a href="mailto:hello@surety.com" className="me-xl-8 text-icon-blue ">
                                     <i className="fa fa-envelope-o me-xl-1"></i>
-                                        Email: vppissurlem01@gmail.com
+                                        Email: panchayatvelsao@gmail.com
                                     </a>
                                     <a href="tel:+822456974" className="me-xl-8 text-icon-blue">
                                     <i className="fa fa-mobile me-xl-1"></i>
-                                        Call Us For Inquiry: +91 84462 98664
+                                        Call Us For Inquiry: +91 7588533079
                                     </a>
                                     {/* <a onClick={()=> newClick()} className=" me-xl-8 text-black">
                                     <i className="fa fa-angle-double-right me-xl-1"></i>
@@ -76,16 +76,16 @@ const TopHeaderAreaComponent = ({setRegStatus,cUser}) => {
 
                                     <span className='soc-md-sec'>
                                         <a className='soc-md-icon' target='_blank'>
-                                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                                        </a>
-                                        <a className='soc-md-icon' target='_blank' href='https://www.facebook.com/profile.php?id=100090479850251'>
-                                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                            <i class="fa fa-instagram" aria-hidden="false"></i>
                                         </a>
                                         <a className='soc-md-icon' target='_blank'>
-                                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                            <i class="fa fa-facebook-official" aria-hidden="false"></i>
                                         </a>
                                         <a className='soc-md-icon' target='_blank'>
-                                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                            <i class="fa fa-twitter-square" aria-hidden="false"></i>
+                                        </a>
+                                        <a className='soc-md-icon' target='_blank'>
+                                            <i class="fa fa-youtube-play" aria-hidden="false"></i>
                                         </a>
 
                                     </span>

@@ -28,6 +28,32 @@ import {selectFootData} from '../../redux/footer/footSelector';
          <>
              <footer className='c-footer'>
                  <div className="container-fluid pb-2 mt-5 mt-md-5">
+                    <div className='row'>
+                        <div className='col-md-4'>
+                        <h6 className='mb-2 text-white text-decoration-underline'> Helpline Contact </h6>
+                                <p className='mb-2 text-white'>Police – <b>100</b></p>
+                                <p className='mb-2 text-white'>Fire – <b>101</b></p>
+                                <p className='mb-2 text-white'>Ambulance –  <b>102</b></p>
+                                <p className='mb-2 text-white'>Women Helpline - <b>1091</b></p>
+                                <p className='mb-2 text-white'>Child Helpline - <b>1098</b></p>
+                        </div>
+                        <div className='col-md-4'>
+                        <h6 className='mb-2 text-white text-decoration-underline'> Quick Links </h6>
+                                <p onClick={() =>goToPage('reporting/admin-and-audit','admin-and-audit','Admin and Audit','Reporting','/admin-and-audit/','Yes')} className='mb-2 text-white'>Admin & Audit</p>
+                                <p onClick={() =>goToPage('reporting/grants-received','grants-received','Grants Received','Reporting','/grants-received/','Yes')} className='mb-2 text-white'>Grants Received</p>
+                                <p onClick={() =>goToPage('reporting/tenders','tenders','Tenders','Reporting','/tenders/','Yes')} className='mb-2 text-white'>Tenders</p>
+                                <p onClick={() =>goToPage('reporting/applications','applications','Applications','Reporting','/applications/','Yes')} className='mb-2 text-white'>Applications</p>
+                                <p onClick={() =>goToPage('about-us/panchayat-members','panchayat-members','Panchayat Members','About Us','/panchayat-members/','Yes')} className='mb-2 text-white'>Members</p>
+                                <p onClick={() =>goToPage('about-us/projects','projects','Projects Members','About Us','/projects/','Yes')} className='mb-2 text-white'>Projects</p>
+                       
+                        </div>
+                        <div className='col-md-4'>
+                        <h6 className='mb-2 text-white text-decoration-underline'> Contact Details </h6>
+                                <p className='mb-2 text-white'>Address:Village Panchayat Velsao Pale 120, MDR43, Consua, Goa 403712</p>
+                                <p className='mb-2 text-white'>Phone number: +91 7588533079</p>
+                                <p className='mb-2 text-white'>Email: panchayatvelsao@gmail.com</p>
+                        </div>
+                    </div>
                      
                     <div className='f-link'>
                         <nav className="nav social social-muted mb-0 justify-content-center">
@@ -45,51 +71,34 @@ import {selectFootData} from '../../redux/footer/footSelector';
                         {/* <h6>Follow Us </h6> */}
 
                         <a target='_blank'>
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a> 
-                        <a target='_blank' href='https://www.facebook.com/profile.php?id=100090479850251'>
-                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="false"></i>
                         </a> 
                         <a target='_blank'>
-                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            <i class="fa fa-facebook-official" aria-hidden="false"></i>
                         </a> 
                         <a target='_blank'>
-                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            <i class="fa fa-twitter-square" aria-hidden="false"></i>
+                        </a> 
+                        <a target='_blank'>
+                            <i class="fa fa-youtube-play" aria-hidden="false"></i>
                         </a> 
                      </div>
 
                      <div className='row'>
                         <div className='col-md-4 col-sm-12'></div>
 
-                        <div className='col-md-4 col-sm-12'>
+                        {/* <div className='col-md-4 col-sm-12'>
                             <div className="c-footer-pd text-center ft-addrs">
                                 <p className="mb-2 mb-lg-0 adress-block">
-                                    <span className='mr-5'><i className="fa fa-map-marker" aria-hidden="true"></i> HNo. 42, Gaonkarwada, Pissurlem Sattari North Goa, 403530</span>
+                                    <span className='mr-5'><i className="fa fa-map-marker" aria-hidden="true"></i> HNo. 42, Gaonkarwada, Velsao-Pale-Issorcim Sattari North Goa, 403530</span>
                                     <span className='mr-5'><i className="fa fa-phone" aria-hidden="true"></i>+91 84462 98664</span>
-                                    <span className='mr-5'> <i className="fa fa-envelope-o" aria-hidden="true"></i> vppissurlem01@gmail.com</span></p>
+                                    <span className='mr-5'> <i className="fa fa-envelope-o" aria-hidden="true"></i> Velsao-Pale-Issorcim@gmail.com</span></p>
 
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className='col-md-4 col-sm-12'>
-                        <div className="c-footer-pd text-center ft-addrs wrapper-ft">
-
-                            <div>
-                                <img src='https://res.cloudinary.com/depg2aab2/image/upload/v1697617150/vp/pissurlem/qr_pissurlem-min_pf6gmu.jpg'
-                                    height={200} width={200} alt="g20"></img>
-                                <p>SCAN & PAY</p>
-                                <span className='mr-5'>UPI ID  : <span className='bnk-bd'>vppissurlem@sbi</span></span>
-                            </div>
-                            <div className='bnk-box'>
-                                <p className="mb-2 mb-lg-0 adress-block">
-                                    <span className=''>Name of Account Holder : <span className='bnk-bd'>Village Panchayat Pissurlem</span></span>
-                                    <span className=''>Name of Bank : <span className='bnk-bd'>State Bank Of India</span></span>
-                                    <span className=''>Branch/Code : <span className='bnk-bd'>Honda-Sattari(Goa) / 6191</span></span>
-                                    <span className=''>Account Number : <span className='bnk-bd'>11327816620</span></span>
-                                    <span className=''>Account Type : <span className='bnk-bd'>Regular Savings Bank Account</span></span>
-                                    <span className=''>IFSC Code  : <span className='bnk-bd'>SBIN0006191</span></span>
-                                </p>
-                            </div>
+                        <div className="c-footer-pd text-center ft-addrs wrapper-ft" style={{ display : 'none'}}>
                                      
                             </div>
                         </div>
@@ -98,7 +107,7 @@ import {selectFootData} from '../../redux/footer/footSelector';
                      
 
                      <div className="c-footer-pd text-center ft-rights">
-                        <p className="mb-2 mb-lg-0">© 2023 VPPissurlem. All rights reserved.</p>
+                        <p className="mb-2 mb-lg-0">© 2024 VP Velsao Pale Issorcim. All rights reserved.</p>
                      </div>
 
                      </div>

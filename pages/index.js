@@ -25,6 +25,10 @@ import PosterComponent from '../components/home/PosterComponent';
 import HallBookButtonComponent from '../components/home/HallBookButtonComponent';
 import AnnounceModal from '../components/modal/AnnounceModal';
 import StepsComponent from '../components/StepsComponent';
+import PopulationCountSectionComponent from '../components/home/PopulationCountSectionComponent';
+import NewOtherLinks from '../components/home/NewOtherLinks';
+import MarqComponent from '../components/home/MarqComponent';
+import IntroComponent from '../components/home/IntroComponent';
 
 //get initial ServerSideProps
 
@@ -33,17 +37,21 @@ const index = ({isLoading}) => {
         <>
             <Spin spinning={isLoading}>
             {/* <AnnounceModal/> */}
+            <MarqComponent />
             <Sliderbanner/>
-            <OtherLinks />
-            {/* <StepsComponent/> */}
-            <Banner />
+            <NewOtherLinks />
             <NewsSectionComponent />
+            {/* <OtherLinks /> */}
+            {/* <StepsComponent/> */}
+            {/* <Banner /> */}
+            <IntroComponent />
             {/* <HallBookButtonComponent/> */}
             {/* <PosterComponent /> */}
+            
             <ProfileComponent/>
             <OtherLinksComponent/> 
-            <PopulationSectionComponent/>
             <FacilitesComponent/>
+            <PopulationSectionComponent/>
             <Schemes/>
             <OurClientsComponent/>
             <MapComponent/>

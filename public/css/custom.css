@@ -679,7 +679,7 @@ color: #949494;
   /* Floating Social Media Bar Style Ends Here */
   
   .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #c6fbc2!important;
+    color: #90B494!important;
     
 }
 
@@ -1092,9 +1092,16 @@ padding-left: 0rem;
     color: white ;
 }
 .bg-c-blue{
-    background-color:#4625a4;
+    background-color:#DBCFB0;
     padding: 14px !important;
     /* box-shadow: 0px 7px 14px 3px #10084f; */
+}
+.text-black {
+  color:#000000;
+}
+.bg-c-blue2{
+  /* background-color:#ff3a50; */
+  /* box-shadow: 0px 7px 14px 3px #10084f; */
 }
 .link-c-blue{
   color: #7f7544;
@@ -1768,7 +1775,7 @@ padding-left: 0rem;
 .top-header-area{
   line-height: 2.0;
   /* background-color: #88f5ca; */
-  background-color: #847eebab;
+  background-color: #f0dbc1;
 }
 .header-content-right a,
 .header-content-left a{
@@ -5279,7 +5286,7 @@ width: 17%;
 }
 .abt-card .ant-card-head{
   min-height: 0;
-  background: #4625a4;
+  background: #718F94;
   padding: 0;
   border-bottom: 0px solid #f0f0f0;
     border-radius: 0px 0px 0 0;
@@ -5487,7 +5494,7 @@ margin-top: 24px;
 }
 .blink {
   text-shadow: 0 0 0px #000000, 0 0px 0px #000000;
-  box-shadow: 0px 1px 20px #ff0000;
+  box-shadow: 0px 1px 20px #718F94;
   -webkit-animation: pulse2 400ms infinite alternate;
   animation: pulse2 400ms infinite alternate;
   padding: 2px 10px;
@@ -5646,7 +5653,7 @@ margin-top: 24px;
 }
 .facility-tab .ant-tabs-tab.ant-tabs-tab-active {
   color: #fff;
-  background-color: #4625a4;
+  background-color: #718F94;
   /* border-bottom: 3px solid #788bba;
   border-left: 3px solid #788bba;
   margin-bottom: 4px; */
@@ -5739,7 +5746,7 @@ padding-bottom: 24px;
   /* background-color: #747161; */
   /* background-color: #28375f; */
   /*background-image: url('../img/page-bg.gif');*/
-  background-color: #4625a4;
+  background-color: #545775;
   padding: 35px 0 10px;
 }
 .c-footer hr{
@@ -5822,7 +5829,7 @@ button.close {
 .about-us-tab .ant-tabs-tab.ant-tabs-tab-active {
   color: #fff;
   /* background-color: #7f7544; */
-  background-color: #4625a4;
+  background-color: #718F94;
 }
 .about-us-tab .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
   color: #fff;
@@ -5849,20 +5856,20 @@ button.close {
 padding-bottom: 24px;
 }
 .caption1 h2:before {
-  content: '';
+  /* content: '';
   display: block;
   width: 5px;
   height: 35px;
   background-color: #4625a4;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
 }
 
 .caption1 h2 {
   position: relative;
   padding-left: 20px;
-  border-bottom: 1px solid #ded9d9;
+  /* border-bottom: 1px solid #ded9d9; */
   padding-bottom: 5px;
   font-size: 180%;
   font-weight: 600;
@@ -6050,7 +6057,7 @@ background-size:cover;
   font-weight: 500;
 }
 .profile-section {
-  background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1696052691/vp/pissurlem/IMG_20230908_110355_t979r7.jpg');
+  background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1710191871/vp/%20Velsao-Pale-Issorcim/PanchayatPhto_qd9bkf.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed !important;
@@ -6059,7 +6066,7 @@ background-size:cover;
 .profile-section:before {
   /* background: #413a18d1; */
   /* background: #bad7e9d9; */
-  background: #0016a291  !important; 
+  background: #7c840a91  !important; 
     content: "";
     display: block;
     position: absolute;
@@ -6141,7 +6148,7 @@ justify-content: flex-start;
 }
 .ol-tur .ant-card-body{
   /* background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1691660809/vp/Chicalim/St.Jacinto-Island1_uqbbdf.jpg'); */
-  background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1696061165/vp/pissurlem/templebckground_vn34y6.jpg');
+  background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1709185183/vp/%20Velsao-Pale-Issorcim/Velsao-Spring_jcwf72.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -6161,7 +6168,7 @@ justify-content: flex-start;
 }
 .ol-gov .ant-card-body{
   /* background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1691660809/vp/Chicalim/vpchic_fogufz.jpg'); */
-  background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1696061432/vp/pissurlem/villagepanchayat_xbl8pi.jpg');
+  background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1709185436/vp/%20Velsao-Pale-Issorcim/big_193821_big_172262_velsao-pale-VP_tshzxv.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -6352,7 +6359,7 @@ border: 0px;
 }
 
 .news-links {
-  background-image: linear-gradient(to right, #5b39bc, #5c39bcd2, #5b39bc);
+  background-image: linear-gradient(to right, #00a1ff, #0082ce, #00a1ff);
   color: white;
 }
 
@@ -6376,9 +6383,9 @@ border: 0px;
 
 .news-ps2 {
   border-radius: 4px;
-  background-color: #f1e9dc;
+  background-color: #90B494;
   position: relative;
-  top: -30px;
+  top: -7px;
 }
 .news-ps2 .marquee-box{
   padding: 16px;
@@ -6406,7 +6413,7 @@ border: 0px;
 .fs-clr {
   /* background-color: #27E1C1;
   border: 1px solid #28375f; */
-  background-color: #4625a4;
+  background-color: #718F94;
   color: white;
   border: 1px solid #000000;
 }
@@ -6897,6 +6904,15 @@ padding-bottom: 24px;
 }
 
 .m-logo a .vp-title{
+  font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 400%;
   text-transform: uppercase;
   color: #4625a4;
 }
@@ -7249,7 +7265,7 @@ padding-bottom: 24px;
 }
 .container-othr .ant-card:hover {
   /* transform: perspective(800px) rotateY(0deg) scale(1.12); */
-  transform: scale(1.12);
+  /* transform: scale(1.12); */
   opacity: 1;
 }
 
@@ -7407,7 +7423,9 @@ padding-bottom: 24px;
 }
 
 .news-vw {
-  color: #4625a4;
+  color: #fff;
+    background-color: #718F94;
+    padding: 7px;
 }
 
 .news-vw:hover {
@@ -7663,19 +7681,40 @@ content: "";
   padding-bottom: 11px;
 }
 .abt_sec .abt-card {
-  border: 1px solid #ececec !important;
-  margin-top: 35px;
+  /* border: 1px solid #ececec !important; */
+  /* margin-top: 35px; */
+  border: 0px solid #ffffff00 !important;
+  border-radius: 5px !important;
+  box-shadow: 0px 10px 40px #5e5d5cba;
 }
 .news-block {
-  padding: 6px 12px;
-  background-color: #488dff61;
+  position: relative;
+  padding: 6px 6px 6px 6px;
+  background-color: #BFC8AD;
   border-radius: 4px;
   margin-bottom: 10px;
+  overflow: hidden; /* To hide overflow from slanted pseudo-elements */
 }
+/* .news-block::after {
+  content: '';
+  width: 14px;
+  height: 0;
+  border-top: 210px solid #eef2fb;
+  border-bottom: 155px solid #eef2fb;
+  border-left: -px solid #BFC8AD;
+  position: absolute;
+  top: 82%;
+  right: 0px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+} */
+
+
 .news-content p {
   color: #767676;
   font-size: 11px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   margin-bottom: 2px !important;
 }
 .news-date {
@@ -8006,10 +8045,16 @@ marquee {
   justify-content: center;
   
 }
+.flex-container-prof2 p {
+  color: #fff;
+}
+.green-grey {
+  color: #718F94;
+}
 
 .flex-container-prof2 > div {
   padding: 8px 8px;
-  background-color: #16ffa3;
+  background-color: #718F94;
   width: 170px;
   margin: 10px;
   text-align: center;
@@ -8071,7 +8116,7 @@ marquee {
 }
 
 .sar-profile {
-  background-color: beige;
+  background-color: #d6e3e6;
   box-shadow: 5px 10px 18px #888888;
 }
 
@@ -8085,7 +8130,7 @@ marquee {
 .ag-courses-item_bg {
   height: 188%;
   width: 55%;
-  background-color: #f9b1349e;
+  background-color: #dad5cb9e;
   z-index: 1;
   position: absolute;
   top: -58px;
@@ -8136,4 +8181,265 @@ marquee {
 
 .bnk-box span {
   margin-bottom: 20px;
+}
+
+/* .card-infra-txt {
+  position: relative;
+  z-index: 4;
+  top: -150px;
+  background-color: #3970ff;
+  margin: 25px 15px;
+  border-radius: 4px;
+  padding: 20px 20px;
+  text-align: center;
+} */
+
+.card-infra {
+  background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1694498381/vp/nagargoa/newsp1cmp-min_onxnol.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-infra-txt {
+  overflow: auto;
+  width: 16rem;
+  background-color: #f0ffffbf;
+  /* margin: 24px 0px; */
+  /* border-radius: 5px; */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.70); */
+}
+
+.rec-card .rec-dev-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px; 
+  color: white;
+  background-color: rgb(0 0 0 / 70%); 
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.rec-card .carousel-indicators {
+  display: none !important;
+}
+.first-div {
+  background-color: red;
+}
+
+
+.first-div::after {
+  right: 0;
+  transform: skewX(20deg); /* Adjust skew degree for right slant */
+}
+.first-div div {
+  padding: 30px;
+  color: white;
+}
+.second-div {
+  background-color: green;
+}
+.second-div div {
+  padding: 30px;
+  color: white;
+}
+.third-div {
+  background-color: blue;
+}
+.third-div div {
+  padding: 30px;
+  color: white;
+}
+.fourth-div {
+  background-color: orange;
+}
+.fourth-div div {
+  padding: 30px;
+  color: white;
+}
+.fifth-div {
+  background-color: black;
+}
+.fifth-div div {
+  padding: 30px;
+  color: white;
+}
+.sixth-div {
+  background-color: purple;
+}
+.sixth-div div {
+  padding: 30px;
+  color: white;
+}
+/* .all-links div a {
+  font-size: 20px;
+} */
+.icon-div {
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.fifly-left .ant-card-bordered {
+  background-color: #718F94;
+  /* width: 60%; */
+}
+.fifly-left .img1 {
+  position: absolute;
+    top: -83px;
+    height: 165px;
+}
+.fifly-left h2 {
+  padding: 28px 68px 0 68px;
+    color: #000;
+    text-align: center;
+}
+.mid-sec {
+  /* padding-top: 120px; */
+}
+.mid-sec .ant-btn > span {
+  display: inline-block;
+  color: #062C60;
+  font-size: 16px;
+  font-weight: bold;
+}
+.fifly-left .img2 {
+  float: left;
+}
+.fifly-left .img4 {
+  padding-top: 44px;
+    height: 393px;
+    width: 584px;
+}
+.fifly-left .col-md-7 {
+  padding: 0px;
+}
+.fifly-left .col-md-5 {
+  padding: 0px;
+}
+.fifly-left .ant-card-body{
+  height: 437px;
+}
+.fifly-left .img3 {
+  position: absolute;
+  padding-left: 592px;
+  height: 165px;
+  bottom: -72px;
+
+}
+
+.button-class {
+  /* padding: 0px 288px 0px 266px  */
+  display: flex;
+  justify-content: center;
+}
+.new-class {
+  position: relative;
+    top: 70px;
+}
+.new-class p{
+  color: #fff;
+  font-size: 16px;
+}
+.tab-less .ant-tabs > .ant-tabs-nav .ant-tabs-nav-list {
+  background-color: #718F94;
+}
+.tab-less .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  padding: 1px 23px;
+  font-size: 18px;
+}
+.tab-less .ant-tabs-tab-active::after {
+  /* border-left: 31px solid red !important; */
+}
+.tab-less .ant-tabs-tab::after {
+  content: '';
+    width: 20px;
+    height: 0;
+    border-top: 96px solid transparent;
+    border-bottom: 33px solid transparent;
+    border-left: 33px solid #718f94 !important;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.tab-less .ant-tabs-ink-bar {
+  height: 1px;
+  background: rgba(255, 255, 255, 0) !important;
+}
+
+#home-heading
+{
+    position: relative;
+    margin-top: 2px;
+    min-height: 200px;
+    background: url('/img/imgte12.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    text-decoration: solid;
+    color: #fff;
+}
+.dark-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+}
+.card-deck .col-md-3 {
+  padding: 0px;
+}
+.new-chap p {
+  text-align: center;
+    padding: 45px 0px;
+    font-size: 27px;
+    margin-bottom: 0px;
+    color: #fff;
+
+}
+.new-chap {
+  background-image: url('/img/development/img1.jpg');
+}
+.tab-class .ant-tabs-nav .ant-tabs-tab {
+  border-bottom: 2px solid black;
+  padding: 20px;
+  font-size: 15px;
+}
+.tab-class .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: white;
+  font-size: 15px;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+  transition: bottom 0.3s;
+}
+.image-div {
+  width: 801px;
+  height: 260px;
+}
+.overlay-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(60 81 209 / 70%);
+}
+.overlay-box p {
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  position: relative;
+  top: -30px;
+}
+.rec-card img {
+  height: 251px;
+}
+.c-footer p {
+  cursor: pointer;
 }

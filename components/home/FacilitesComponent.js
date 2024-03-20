@@ -1,5 +1,7 @@
 import React from 'react'
-import {Tabs,Card } from 'antd';
+import { Tabs } from 'antd';
+// import { Card } from 'antd';
+import Card from 'react-bootstrap/Card';
 const { TabPane } = Tabs;
 const { Meta } = Card;
 import Image from 'next/image'
@@ -78,59 +80,24 @@ const FacilitesComponent = () => {
                   <div className="row">
                       <div className="col-md-12 mx-auto">
                           <div className='facility-tab'>
-                          <Tabs tabPosition={tabLayout}>
+                          <Tabs  type="card">
                             {iData!==null?
                             iData.map((i,idx)=>
                             <TabPane tab={i.title} key={idx}>
                                 <div className='row'>
                                     {i.infrastructure.infraDetails!==null ? i.infrastructure.infraDetails.map((d,ix)=>
-                                        <div key={ix} className='col-lg-12 col-md-12 col-sm-12 fac-effect ' style={{padding : '16px 16px'}}>
+                                        <div key={ix} className='col-lg-6 col-md-6 col-sm-12 fac-effect ' style={{padding : '16px'}}>
                                           <div className='row'>
-                                          <Card 
-                                                // title={d.name} 
-                                                className='col-md-6 faci-card'
-                                                hoverable
-                                                style={{ width: imgWidth }}
-                                                cover={
-                                                <Image alt="facilities"
-                                                className='ag-courses-item_img'
-                                                placeholder="blur"
-                                                blurDataURL={load}
-                                                priority={true}
-                                                 src={d.image.sourceUrl} 
-                                                 height={500} 
-                                                 width={800} 
-                                                 />}
-                                            >
+
+                                          <Card style={{ width: '36rem', height: '14rem', backgroundImage: `url(${d.image.sourceUrl})`, backgroundSize: 'cover' }} className='card-infra'>
+                                            <Card.Body className='card-infra-txt'>
+                                              <Card.Title>{d.name}</Card.Title>
+                                              <Card.Text>{d.desc}</Card.Text>
+                                            </Card.Body>
                                           </Card>
-                                          <Card className='col-md-6 vil-cnt'>
-                                            <h4 className='link-c-blue mb-0 text-center'> {d.name}  </h4>
-                                            <p className='ag-courses-item_title mb-0'>{d.desc}</p>
-                                          </Card>
+                                          
                                           </div>
-                                            
 
-
-                                            {/* <Card 
-                                                // title={d.name} 
-                                                className='faci-card link-ct-blue mb-0 text-center ag-courses_item ag-courses-item_link'
-                                                hoverable
-                                                style={{ width: imgWidth }}
-                                                cover={
-                                                <Image alt="facilities"
-                                                className='ag-courses-item_img'
-                                                placeholder="blur"
-                                                blurDataURL={load}
-                                                priority={true}
-                                                 src={d.image.sourceUrl} 
-                                                 height={500} 
-                                                 width={800} 
-                                                 />}
-                                            >
-                                              <div className='ag-courses-item_bg'></div>
-                                                <h4 className='link-c-blue mb-0 text-center'> {d.name}  </h4>
-                                                <p className='ag-courses-item_title mb-0'>{d.desc}</p>
-                                            </Card> */}
 
                                             
                                         </div>
