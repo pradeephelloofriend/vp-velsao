@@ -3,9 +3,13 @@ import { connect } from 'react-redux';
 import {createStructuredSelector} from 'reselect'
 import {selectMenuData,selectTabKey} from '../../redux/menu/menuSelector'
 import {setTabKey} from '../../redux/menu/menuAction'
-import {Tabs,Card,Spin } from 'antd';
+import {Tabs,Card,Spin,Modal } from 'antd';
 import { useRouter } from 'next/router'
 import {getGalleryCat} from '../../lib/api'
+import { getGalleryV2Data } from '../../lib/api';
+import load from '../../public/img/loading.png'
+import Image from 'next/image'
+const { Meta } = Card;
 
 import Axios from 'axios';
 
@@ -20,6 +24,20 @@ const GalleryComponent = ({tabKey,routeTitle,menuData,cDetailData,routeUri,setTa
     const [crData,setCrData]=React.useState(null)
     const router = useRouter();
     const[tabLayout,setTablLayout]=React.useState('left')
+
+    const [isModalVisible, setIsModalVisible] = React.useState(false);
+    const [gallv2Data, setGallv2Data] = React.useState(null)
+    const [selectedIdx, setSelectedIdx] = React.useState(null);
+
+    const showModal = (idx) => {
+      setSelectedIdx(idx);
+      setIsModalVisible(true);
+    };
+  
+    const handleCancel = () => {
+      setIsModalVisible(false);
+    };
+
     React.useEffect(()=>{
         //console.log('tabKey',tabKey)
         let isApiSubscribed = true;
@@ -35,10 +53,12 @@ const GalleryComponent = ({tabKey,routeTitle,menuData,cDetailData,routeUri,setTa
               if(tabKey=='/photos-and-video/'){
                 async function fetchData() {
                   const cData = await getGalleryCat() //applo client  
+                  const gallyv2Data = await getGalleryV2Data()
             
                   // 👇️ only update state if component is mounted
                   if (isApiSubscribed) {
                     setCrData(cData)
+                    setGallv2Data(gallyv2Data)
                     setIsLoading(false)
 
                     // console.log("new data", cData)
@@ -96,6 +116,7 @@ const GalleryComponent = ({tabKey,routeTitle,menuData,cDetailData,routeUri,setTa
     
    const {iscomplete}= router.query
    //console.log('crData',crData)
+   console.log("gallv2Data : ", gallv2Data)
   return (
     <>
           <section className="wrapper bg-gray">
@@ -103,7 +124,69 @@ const GalleryComponent = ({tabKey,routeTitle,menuData,cDetailData,routeUri,setTa
                   <div className="row">
                       <div className='col-12'>
                           <div className='gallery-disp-tab'>
-                              <Tabs activeKey={tabKey} onTabClick={(key) => setTabKey(key)} tabPosition={tabLayout}>
+                          <div className='row'>
+                        {gallv2Data !== null ? gallv2Data.map((n, idx) => (
+                        
+                        <div className='col-lg-4 col-md-4 col-sm-12' key={idx}>
+                        {n.galleryv2 !== null ? 
+                            <Card
+                            className=' faci-card card-article'
+                            title={n.galleryv2.title}
+                              hoverable
+                              cover={
+                                <Image alt="facilities"
+                                    className=''
+                                    placeholder="blur"
+                                    blurDataURL={load}
+                                    priority={true}
+                                    src={n.galleryv2.image.mediaItemUrl !== null ?
+                                      n.galleryv2.image.mediaItemUrl :
+                                      'https://res.cloudinary.com/depg2aab2/image/upload/v1696576498/donbosco/noimgavail-min_ndtaun.jpg'
+                                  }
+                                    height={500}
+                                    width={800}
+                                />
+                            }
+                              onClick={() => showModal(idx)}
+                            >
+                            </Card>
+                          :
+                          <></>}
+                        </div>
+                        
+                      )) : <><p>asd</p></>}
+                      </div>
+
+
+
+                      <Modal
+                      width={1000}
+                        // title="More Images"
+                        visible={isModalVisible}
+                        onCancel={handleCancel}
+                        footer={null}
+                      >
+                        {selectedIdx !== null && gallv2Data[selectedIdx] && (
+                          <div className='row' key={selectedIdx}>
+                            
+                              {
+                                gallv2Data[selectedIdx].galleryv2.articleGallery !== null ?
+                                  gallv2Data[selectedIdx].galleryv2.articleGallery.map((gall_val, gall_id) => (
+                                    <div className='col-lg-4 col-md-4 col-sm-12 my-4'>
+                                    <img className='my-4' key={gall_id} src={gall_val.mediaItemUrl !== null ? gall_val.mediaItemUrl : ""}
+                                      height={200} width={300}></img>
+                                      </div>
+                                  ))
+                                  :
+                                  <></>
+                              }
+                            
+                          </div>
+                        )}
+                      </Modal>
+
+
+                              {/* <Tabs activeKey={tabKey} onTabClick={(key) => setTabKey(key)} tabPosition={tabLayout}>
                                 {mData!==null?mData.childItems.edges.map((t,idx)=>
                                     <TabPane tab={t.node.label} key={t.node.uri}>
                                       <Spin spinning={isLoading} >
@@ -120,7 +203,7 @@ const GalleryComponent = ({tabKey,routeTitle,menuData,cDetailData,routeUri,setTa
                                 ):<></>}
                                   
                                   
-                              </Tabs>
+                              </Tabs> */}
                           </div>
                       </div>
                   </div>

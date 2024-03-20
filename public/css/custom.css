@@ -8101,7 +8101,7 @@ marquee {
 }
 
 .faci-card .ant-card-cover > div{
-  position: static !important;
+  /* position: static !important; */
   /* height: 100% !important; */
   /* background-size: cover !important; */
   /* background-position: center !important; */
