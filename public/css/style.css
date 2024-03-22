@@ -32227,7 +32227,8 @@ fieldset:disabled .btn.btn-circle {
 
 .navbar {
     width: 100%;
-    z-index: 1020
+    /* z-index: 1020 */
+    z-index: 1000
 }
 
 .navbar.transparent .logo-dark {
@@ -40283,7 +40284,7 @@ footer.bg-dark.angled.upper-start:before {
 .sticky-top {
     position: sticky;
     top: 0;
-    z-index: 1020   
+    /* z-index: 1020    */
     
 }
 

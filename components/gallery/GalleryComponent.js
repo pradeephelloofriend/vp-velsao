@@ -154,7 +154,7 @@ const GalleryComponent = ({tabKey,routeTitle,menuData,cDetailData,routeUri,setTa
                           <></>}
                         </div>
                         
-                      )) : <><p>asd</p></>}
+                      )) : <><p></p></>}
                       </div>
 
 
