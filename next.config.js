@@ -5,16 +5,16 @@ module.exports = {
         //domains: ['localhost'],
         
         loader: "default",
-        domains: ["res.cloudinary.com","speedtrack.co.in","gitlab.com"],
+        domains: ["res.cloudinary.com","speedtrack.co.in","gitlab.com","wpadmin.vpvelsao-pale-issorcim.in"],
 
     },
     env:{
         // API_PATH:"http://localhost:1339",
-        API_PATH:"https://speedtrack.co.in/wp-vp-velsao/wp-json/wp/v2/",
-        TEMP_GQL_API_PATH:'https://speedtrack.co.in/wp-vp-velsao/graphql',//leter we remove it
-        SQL_API_PATH:"https://speedtrack.co.in/wp-vp-velsao",
-        WP_API_PATH:"https://speedtrack.co.in/wp-vp-velsao/wp-json/wp/v2/",
-        GQL_API_PATH:'https://speedtrack.co.in/wp-vp-velsao/graphql',
+        API_PATH:"https://wpadmin.vpvelsao-pale-issorcim.in/wp-json/wp/v2/",
+        TEMP_GQL_API_PATH:'https://wpadmin.vpvelsao-pale-issorcim.in/graphql',//leter we remove it
+        SQL_API_PATH:"https://wpadmin.vpvelsao-pale-issorcim.in",
+        WP_API_PATH:"https://wpadmin.vpvelsao-pale-issorcim.in/wp-json/wp/v2/",
+        GQL_API_PATH:'https://wpadmin.vpvelsao-pale-issorcim.in/graphql',
         JWT_TOKEN:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsIm5hbWUiOiJhZG1pbiIsImlhdCI6MTY1NzU1ODkxNCwiZXhwIjoxODE1MjM4OTE0fQ.kg71BT59KvKXpk6w0i-rBdx_At1NQWthSgmyXieYjiA',
 
         RAZORPAY_KEY:'rzp_test_d0Kjx4nv1IDXeY',
